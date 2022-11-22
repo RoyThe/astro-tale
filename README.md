@@ -1,15 +1,14 @@
-# La Tale Website Copy
+# LT Website Dev
+
+## Test Commands
+Feel free to clone this repo and run `npm i && npm run server` for a preview of the current build release. This repo includes all necessary information to open the dev environment I'm working in, though images and other downloaded content is saved locally (for privacy reasons).
 
 ## To Do
 - [x] copy website
-- [ ] publish to private repository
-- [ ] track dead links / issues
-- [ ] properly document html pages / redirects
-- [ ] create development environment with override vars
+- [x] publish to private repository
+- [x] track dead links / issues
+- [x] properly document html pages / redirects
 - [ ] CI/CD pipeline
-- [ ] Meta domain verification
-- [ ] remove fb pixel code
-- [ ] verify xmas wrapper content
 
 ## Issue Tracking
 
