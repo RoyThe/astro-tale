@@ -1,5 +1,8 @@
 # LT Website Dev
 
+## Test Commands
+Feel free to clone this repo and run `npm i && npm run server` for a preview of the current build release. This repo includes all necessary information to open the dev environment I'm working in, though images and other downloaded content is saved locally (for privacy reasons).
+
 ## To Do
 - [x] copy website
 - [x] publish to private repository
