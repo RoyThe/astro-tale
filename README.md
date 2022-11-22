@@ -1,15 +1,11 @@
-# La Tale Website Copy
+# LT Website Dev
 
 ## To Do
 - [x] copy website
-- [ ] publish to private repository
-- [ ] track dead links / issues
-- [ ] properly document html pages / redirects
-- [ ] create development environment with override vars
+- [x] publish to private repository
+- [x] track dead links / issues
+- [x] properly document html pages / redirects
 - [ ] CI/CD pipeline
-- [ ] Meta domain verification
-- [ ] remove fb pixel code
-- [ ] verify xmas wrapper content
 
 ## Issue Tracking
 
