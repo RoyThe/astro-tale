@@ -5,7 +5,8 @@ module.exports = {
     styled: true,
     themes: [
       {
-        latale: {
+        light: {
+          ...require("daisyui/src/colors/themes")["[data-theme=light]"],
           primary: "rgba(18, 14, 56, 0.9)",
         },
       },
