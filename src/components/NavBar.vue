@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bg-neutral m-0 p-0 h-24 flex" data-theme="dark">
+  <div class="navbar bg-neutral px-10 h-24 flex" data-theme="dark">
     <div class="flex-1 justify-center">
       <a class="w-[130px]" href="/">
         <img class="object-fit h-auto" src="./../../static/assets/lt_logo.png" />
@@ -13,10 +13,6 @@
     <button class="hidden md:inline-flex flex-1 btn btn-lg bg-primary rounded-none h-24 hover:bg-accent text-4xl font-mono text-neutral">Play Now</button>
   </div>
 </template>
-
-<script>
-export default {}
-</script>
 
 <style>
 a:hover {

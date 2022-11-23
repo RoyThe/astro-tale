@@ -1,13 +1,13 @@
 <template>
-  <NavBarVue logo="./../static/assets/lt_logo.png" />
+  <DrawerVue />
 </template>
 
 <script>
-import NavBarVue from "./components/NavBar.vue"
+import DrawerVue from './components/Drawer.vue';
 
 export default {
   components: {
-    NavBarVue,
+    DrawerVue,
   },
 }
 </script>
