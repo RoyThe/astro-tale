@@ -1,9 +1,11 @@
 <template>
-  <DrawerVue />
+  <div data-theme="dark">
+    <DrawerVue />
+  </div>
 </template>
 
 <script>
-import DrawerVue from './components/Drawer.vue';
+import DrawerVue from "./components/Drawer.vue"
 
 export default {
   components: {

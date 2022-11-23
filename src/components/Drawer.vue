@@ -12,10 +12,22 @@
     </div>
     <div class="drawer-side">
       <label for="my-drawer" class="drawer-overlay"></label>
-      <ul class="menu p-4 w-80 bg-base-100 text-base-content">
-        <!-- Sidebar content here -->
+      <ul class="menu p-4 w-80 bg-neutral text-base-content">
+        <li>
+          <a class="w-[130px]" href="/">
+            <img class="object-fit h-auto" src="./../../static/assets/lt_logo.png" />
+          </a>
+        </li>
         <li><a>About</a></li>
-        <li><a>Sidebar Item 2</a></li>
+        <li><a>News</a></li>
+        <li><a>Update</a></li>
+        <li><a>Media</a></li>
+        <li><a>Forums</a></li>
+        <li>
+          <button class="btn btn-lg bg-primary rounded-none h-24 hover:bg-accent text-4xl font-mono text-neutral">
+            Play Now
+          </button>
+        </li>
       </ul>
     </div>
   </div>
