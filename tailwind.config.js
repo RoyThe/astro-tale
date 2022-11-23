@@ -3,14 +3,7 @@ module.exports = {
   plugins: [require("daisyui")],
   daisyui: {
     styled: true,
-    themes: [
-      {
-        light: {
-          ...require("daisyui/src/colors/themes")["[data-theme=light]"],
-          primary: "rgba(18, 14, 56, 0.9)",
-        },
-      },
-    ],
+    themes: true,
     base: true,
     utils: true,
     logs: true,
