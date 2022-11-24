@@ -1,5 +1,5 @@
 <template>
-  <div data-theme="dark">
+  <div data-theme="coffee">
     <DrawerVue />
   </div>
 </template>

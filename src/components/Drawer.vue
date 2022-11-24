@@ -5,7 +5,7 @@
       <NavBarVue aboutUrl="{aboutUrl}" />
       <label
         for="my-drawer"
-        class="btn btn-ghost hover:btn-accent drawer-button md:hidden absolute top-6 left-6 text-white px-3"
+        class="btn btn-ghost hover:btn-primary drawer-button md:hidden absolute top-6 left-6 text-white px-3"
       >
         <svgMenuVue />
       </label>
@@ -14,9 +14,17 @@
       <label for="my-drawer" class="drawer-overlay"></label>
       <ul class="menu p-4 w-80 bg-neutral text-base-content">
         <li>
-          <a class="w-[130px]" href="/">
-            <img class="object-fit h-auto" src="./../../static/assets/lt_logo.png" />
-          </a>
+          <div class="flex justify-between">
+            <a class="w-[130px]" href="/">
+              <img class="object-fit h-auto" src="./../../static/assets/lt_logo.png" />
+            </a>
+            <label
+              for="my-drawer"
+              class="btn btn-ghost hover:btn-primary drawer-button md:hidden text-white px-3"
+            >
+              <svgMenuVue />
+            </label>
+          </div>
         </li>
         <li><a>About</a></li>
         <li><a>News</a></li>
@@ -36,6 +44,7 @@
 <script>
 import NavBarVue from "./NavBar.vue"
 import svgMenuVue from "./svgMenu.vue"
+
 export default {
   components: {
     NavBarVue,
