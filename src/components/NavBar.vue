@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bg-neutral px-10 h-24 flex">
+  <div class="navbar bg-neutral px-10 h-24 flex z-10">
     <div class="flex-1 justify-center">
       <a class=" w-[100px] sm:w-[130px]" href="/">
         <img class="object-fit h-auto" src="./../../static/assets/lt_logo.png" />
