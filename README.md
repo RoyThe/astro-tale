@@ -1,7 +1,10 @@
 # LT Website Dev
 
-## How to test
-Feel free to clone this repo and run `npm i && npm run server` for a preview of the current build.
+## How to run
+Feel free to clone this repo and run `npm i && npm run server` to see latest build.
+
+## Versions
+**0.0.1** - version for primary navigation, CI/CD testing
 
 ## To Do
 - [x] copy website

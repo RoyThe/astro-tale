@@ -2,7 +2,7 @@
   <div class="drawer">
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
-      <NavBarVue  />
+      <NavBarVue />
       <HomeVue />
     </div>
     <div class="drawer-side">
