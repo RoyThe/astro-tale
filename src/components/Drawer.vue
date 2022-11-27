@@ -2,10 +2,7 @@
   <div class="drawer">
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
-      <NavBarVue aboutUrl="{aboutUrl}" />
-      <label for="my-drawer" class="btn btn-ghost drawer-button md:hidden absolute top-6 left-6 text-white px-3">
-        <svgMenuVue />
-      </label>
+      <NavBarVue  />
       <HomeVue />
     </div>
     <div class="drawer-side">
