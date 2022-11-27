@@ -3,6 +3,8 @@
 ## How to run
 Feel free to clone this repo and run `npm i && npm run server` to see latest build.
 
+Static assets are saved locally, place the folder in root.
+
 ## Versions
 **0.0.1** - version for primary navigation, CI/CD testing
 
