@@ -1,28 +1,3 @@
-<script>
-import NavBarVue from "./NavBar.vue"
-import svgMenuVue from "./svgMenu.vue"
-import HomeVue from "./../views/Home.vue"
-
-const pages = [
-  { title: "About", name: "about" },
-  { title: "News", name: "news" },
-  { title: "Media", name: "media" },
-  { title: "Update", name: "update" },
-  { title: "Forums", name: "forums" },
-]
-
-export default {
-  data() {
-    return { pages }
-  },
-  components: {
-    NavBarVue,
-    svgMenuVue,
-    HomeVue,
-  },
-}
-</script>
-
 <template>
   <div class="drawer">
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
@@ -55,7 +30,7 @@ export default {
           </li>
         </div>
         <li>
-          <button class="btn btn-lg btn-primary rounded-none h-24 text-4xl font-mono text-neutral">
+          <button class="btn btn-lg btn-primary rounded-none h-24 text-4xl">
             <RouterLink :to="{ name: 'download' }">Play Now</RouterLink>
           </button>
         </li>
@@ -63,3 +38,28 @@ export default {
     </div>
   </div>
 </template>
+
+<script>
+import NavBarVue from "./NavBar.vue"
+import svgMenuVue from "./svgMenu.vue"
+import HomeVue from "./../views/Home.vue"
+
+const pages = [
+  { title: "About", name: "about" },
+  { title: "News", name: "news" },
+  { title: "Media", name: "media" },
+  { title: "Update", name: "update" },
+  { title: "Forums", name: "forums" },
+]
+
+export default {
+  data() {
+    return { pages }
+  },
+  components: {
+    NavBarVue,
+    svgMenuVue,
+    HomeVue,
+  },
+}
+</script>

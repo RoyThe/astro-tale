@@ -10,19 +10,11 @@ Static assets are saved locally, place the folder in root.
 
 **0.0.1** - version for primary navigation, CI/CD testing
 
-## Tasks
+## Known Issues
 
 <details>
   </br>
-
-  - [x] copy website
-  - [x] publish to private repository
-  - [x] track dead links / issues
-  - [x] properly document html pages / redirects
-  - [x] include Vue Router
-  - [x] refactor nav menus
-  - [x] figure out why Vite wasn't bundling bg images
-  - [ ] start building home vue
+  - [ ] drawer "Play Now" button text is faded
 
 </details>
 
