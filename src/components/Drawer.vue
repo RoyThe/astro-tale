@@ -9,9 +9,9 @@
       <label for="my-drawer" class="drawer-overlay"></label>
       <ul class="menu p-4 w-80 bg-neutral text-base-content">
         <div class="flex justify-between items-start py-2">
-          <a class="w-[100px]" href="/">
+          <RouterLink class="w-[100px]" :to="{name: 'home'}">
             <img class="object-fit h-auto" src="./../../static/assets/lt_logo.png" />
-          </a>
+          </RouterLink>
           <label for="my-drawer" class="btn btn-ghost drawer-button md:hidden text-white px-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
