@@ -13,8 +13,8 @@
       </div>
     </div>
     <!-- NEWS SECTION START -->
-    <div class="p-10 w-screen">
-      <h1 class="mb-0 text-4xl font-extrabold">News</h1>
+    <div class="py-10 px-6 w-screen">
+      <h1 class="mb-4 text-4xl font-extrabold">News</h1>
       <div class="w-full h-auto flex justify-evenly m-0">
         <div class="card card-compact w-48 md:w-64 lg:w-96 bg-base-100 shadow-xl">
           <figure class="my-1"><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
