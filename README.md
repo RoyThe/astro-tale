@@ -13,9 +13,8 @@ Static assets are saved locally, place the folder in root.
 - [x] publish to private repository
 - [x] track dead links / issues
 - [x] properly document html pages / redirects
-- [ ] include Vue Router
-- [ ] refactor nav menus 
-- [ ] setup elements that'll load content
+- [x] include Vue Router
+- [x] refactor nav menus 
 
 ## Known Issues
 - need to fully understand what Vue Router is doing before I refactor code
