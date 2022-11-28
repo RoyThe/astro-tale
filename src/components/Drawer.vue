@@ -3,7 +3,7 @@
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
       <NavBarVue />
-      <HomeVue />
+      <RouterView />
     </div>
     <div class="drawer-side">
       <label for="my-drawer" class="drawer-overlay"></label>
@@ -41,7 +41,7 @@
 <script>
 import NavBarVue from "./NavBar.vue"
 import svgMenuVue from "./svgMenu.vue"
-import HomeVue from "./views/Home.vue"
+import HomeVue from "./../views/Home.vue"
 
 export default {
   components: {

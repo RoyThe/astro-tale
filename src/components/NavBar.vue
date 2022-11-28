@@ -4,9 +4,9 @@
       <svgMenuVue />
     </label>
     <div class="flex-1 justify-center">
-      <a class=" w-[100px] sm:w-[130px]" href="/">
+      <RouterLink class=" w-[100px] sm:w-[130px]" :to="{name: 'home'}">
         <img class="object-fit h-auto" src="./../../static/assets/lt_logo.png" />
-      </a>
+      </RouterLink>
     </div>
     <div class="btn btn-ghost drawer-button md:hidden px-3 invisible"><svgMenuVue /></div>
     <span class="hidden md:inline-flex flex-1 justify-center text-slate-50 text-2xl hover:text-primary"><a> About </a></span>
