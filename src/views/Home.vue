@@ -1,12 +1,11 @@
 <template>
   <div class="hero min-h-[60vh] bg-cover relative" :style="`background-image: url(${sliderUrl});`">
-    <div class="hero-overlay bg-opacity-60 h-20 absolute bottom-0" />
-    <div class="hero-content absolute bottom-0">
-      <div class="w-screen flex justify-evenly">
-        <button class="btn btn-accent normal-case">
+    <div class="w-screen p-2 py-4 absolute bottom-0 bg-gradient-to-l from-slate-800 to-transparent">
+      <div class="w-full flex justify-evenly">
+        <button class="btn btn-wide btn-accent">
           <RouterLink :to="{ name: 'news' }">See Patch Notes</RouterLink>
         </button>
-        <button class="btn btn-accent normal-case hidden sm:block">
+        <button class="btn btn-wide btn-accent hidden sm:block">
           <RouterLink :to="{ name: 'download' }">Download</RouterLink>
         </button>
       </div>
