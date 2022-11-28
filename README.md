@@ -21,6 +21,8 @@ Static assets are saved locally, place the folder in root.
   - [x] properly document html pages / redirects
   - [x] include Vue Router
   - [x] refactor nav menus
+  - [ ] figure out why Vite wasn't bundling bg images
+  - [ ] start building home vue
 
 </details>
 
