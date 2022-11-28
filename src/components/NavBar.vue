@@ -11,7 +11,7 @@
     <div class="btn btn-ghost drawer-button md:hidden px-3 invisible"><svgMenuVue /></div>
     <div
       class="hidden md:inline-flex flex-1 justify-center text-slate-50 text-2xl hover:text-primary"
-      v-for="page in pages"
+      v-for="page in links"
     >
       <RouterLink :to="{ name: page.name }"> {{ page.title }} </RouterLink>
     </div>
@@ -25,17 +25,7 @@
 import svgMenuVue from "./svgMenu.vue"
 
 export default {
-  data() {
-    return {
-      pages: [
-        { title: "About", name: "about" },
-        { title: "News", name: "news" },
-        { title: "Media", name: "media" },
-        { title: "Update", name: "update" },
-        { title: "Forums", name: "forums" },
-      ],
-    }
-  },
+  props: ['links'],
   components: {
     svgMenuVue,
   },
