@@ -15,7 +15,9 @@
     >
       <RouterLink :to="{ name: page.name }"> {{ page.title }} </RouterLink>
     </div>
-    <button class="hidden md:inline-flex flex-1 btn btn-lg btn-primary rounded-none h-24 text-4xl">Play Now</button>
+    <button class="hidden md:inline-flex flex-1 btn btn-lg btn-primary rounded-none h-24 text-4xl">
+      <RouterLink :to="{ name: 'download' }">Play Now</RouterLink>
+    </button>
   </div>
 </template>
 

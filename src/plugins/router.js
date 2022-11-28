@@ -7,6 +7,7 @@ export const routes = [
   { path: "/media", name: "media", component: () => import("./../views/Media.vue") },
   { path: "/update", name: "update", component: () => import("./../views/Update.vue") },
   { path: "/forums", name: "forums", component: () => import("./../views/Forums.vue") },
+  { path: "/download", name: "download", component: () => import("./../views/Download.vue") }
 ]
 
 const router = createRouter({
