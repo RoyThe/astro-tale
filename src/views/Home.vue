@@ -1,8 +1,23 @@
 <template>
-  <div class="" >
-    <div class="h-[20em] w-full">
-      <img class="overflow-hidden min-h-full min-w-[100%] aspect-auto" src="./../../static/assets/lt-slider.jpg" />
+  <div class="hero min-h-screen" :style="`background-image: url(${sliderUrl});`">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
     </div>
-    
   </div>
 </template>
+
+<script>
+import sliderUrl from './../../static/assets/lt-slider.jpg?url'
+console.log(sliderUrl)
+
+export default {
+  data() {
+    return { sliderUrl }
+  }
+}
+</script>
