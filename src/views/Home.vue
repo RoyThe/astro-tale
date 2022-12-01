@@ -16,22 +16,16 @@
     <div class="py-10 px-6 w-screen">
       <h1 class="mb-4 text-4xl font-extrabold">News</h1>
       <div class="w-full h-auto flex justify-evenly m-0">
-        <div class="card card-compact w-48 md:w-64 lg:w-96 bg-base-100 shadow-xl">
-          <figure class="my-1"><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-          <div class="card-body items-center">
-            <div class="badge badge-primary uppercase m-0 relative -top-8">event</div>
-            <h2 class="card-title -mt-6 w-fit">Upcoming Winter Events</h2>
-            <p>11.28.2022</p>
-          </div>
-        </div>
-        <div class="card card-compact w-48 md:w-64 lg:w-96 bg-base-100 shadow-xl">
-          <figure class="my-1"><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-          <div class="card-body items-center">
-            <div class="badge badge-primary uppercase m-0 relative -top-8">event</div>
-            <h2 class="card-title -mt-6 w-fit">Upcoming Winter Events</h2>
-            <p>11.28.2022</p>
-          </div>
-        </div>
+        <EventCardVue :imgUrl="newsUrls[0]" altText="test" newsType="event" />
+        <span class="w-8 h-1" />
+        <EventCardVue :imgUrl="newsUrls[0]" altText="test" newsType="sale" />
+        <span class="w-8 h-1 hidden min-[650px]:block" />
+        <EventCardVue
+          class="hidden min-[650px]:block"
+          :imgUrl="newsUrls[0]"
+          altText="test"
+          newsType="patch"
+        />
       </div>
     </div>
   </div>
@@ -39,10 +33,16 @@
 
 <script>
 import sliderUrl from "./../../static/assets/lt-slider.jpg?url"
+import EventCardVue from "../components/EventCard.vue"
+const newsUrls = ["https://placeimg.com/400/225/arch"]
 
 export default {
+  components: { EventCardVue },
   data() {
-    return { sliderUrl }
+    return { 
+      sliderUrl,
+      newsUrls
+    }
   },
 }
 </script>
