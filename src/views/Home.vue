@@ -12,12 +12,21 @@
         </div>
       </div>
     </div>
-    <!-- NEWS SECTION START -->
     <div
-      class="mt-5 w-screen grid grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)] grid-rows-1 place-items-center justify-center"
+      class="mt-5 w-screen grid place-items-center justify-center overflow-x-hidden gap-4
+      grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)] 
+      grid-rows-[]"
     >
-      <h1 class="mb-4 ml-4 text-2xl md:text-4xl font-extrabold justify-self-start col-start-2">News</h1>
-      <div class="w-full h-auto flex justify-evenly m-0 col-start-2">
+      <!-- NEWS SECTION START -->
+      <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-1">News</h1>
+      <div class=" w-full h-auto flex justify-evenly m-0 col-start-2 row-start-2">
+        <EventCardVue :imgUrl="newsUrls[0]" altText="test" newsType="event" />
+        <EventCardVue :imgUrl="newsUrls[0]" altText="test" newsType="sale" />
+        <EventCardVue class="hidden lg:block" :imgUrl="newsUrls[0]" altText="test" newsType="patch" />
+      </div>
+      <!-- SERVER STATUS / COMMUNITY -->
+      <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-3">Server Status</h1>
+      <div class=" w-full h-auto flex justify-evenly m-0 col-start-2 row-start-4">
         <EventCardVue :imgUrl="newsUrls[0]" altText="test" newsType="event" />
         <EventCardVue :imgUrl="newsUrls[0]" altText="test" newsType="sale" />
         <EventCardVue class="hidden lg:block" :imgUrl="newsUrls[0]" altText="test" newsType="patch" />
