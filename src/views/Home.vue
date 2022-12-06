@@ -19,7 +19,7 @@
       <h1 class="mb-4 ml-4 text-2xl md:text-4xl font-extrabold justify-self-start col-start-2">News</h1>
       <div class="w-full h-auto flex justify-evenly m-0 col-start-2">
         <EventCardVue :imgUrl="newsUrls[0]" altText="test" newsType="event" />
-        <EventCardVue class="max-[420px]:hidden block" :imgUrl="newsUrls[0]" altText="test" newsType="sale" />
+        <EventCardVue :imgUrl="newsUrls[0]" altText="test" newsType="sale" />
         <EventCardVue class="hidden lg:block" :imgUrl="newsUrls[0]" altText="test" newsType="patch" />
       </div>
     </div>
