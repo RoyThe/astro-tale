@@ -13,13 +13,10 @@ Static assets are saved locally, place the folder in root.
 ## Known Issues
 
 <details>
-  </br>
+  
   - [ ] drawer "Play Now" button text is faded
+  - [ ] breakpoints are manually set
+  - [ ] logo image is like 400kb
+
 
 </details>
-
-## Known Issues
-
-- need to fully understand what Vue Router is doing before I refactor code
-- need to scale image / container for first hero element
-- logo image is like 400kb
