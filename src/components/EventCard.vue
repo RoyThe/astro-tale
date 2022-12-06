@@ -1,5 +1,5 @@
 <template>
-  <div class="card card-compact w-48 md:w-64 lg:w-96 bg-base-100 shadow-xl">
+  <div class="card card-compact w-48 md:w-64 min-[1200px]:w-96 bg-base-100 shadow-xl">
     <figure class="my-1"><img :src="imgUrl" :alt="altText" /></figure>
     <div class="card-body items-center">
       <div class="badge badge-primary uppercase m-0 relative -top-8">{{newsType}}</div>
