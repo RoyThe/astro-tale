@@ -13,19 +13,14 @@
       </div>
     </div>
     <!-- NEWS SECTION START -->
-    <div class="py-10 px-6 w-screen">
-      <h1 class="mb-4 text-4xl font-extrabold">News</h1>
-      <div class="w-full max-w-6xl h-auto flex justify-evenly m-0">
+    <div
+      class="pt-5 w-screen grid grid-cols-[minmax(0,_100px)_minmax(400px,_80rem)_minmax(0,_100px)] grid-rows-1 place-items-center justify-center"
+    >
+      <h1 class="mb-4 text-4xl font-extrabold justify-self-start col-start-2">News</h1>
+      <div class="w-full h-auto flex justify-evenly m-0 col-start-2">
         <EventCardVue :imgUrl="newsUrls[0]" altText="test" newsType="event" />
-        <span class="w-8 h-1" />
         <EventCardVue :imgUrl="newsUrls[0]" altText="test" newsType="sale" />
-        <span class="w-8 h-1 hidden min-[650px]:block" />
-        <EventCardVue
-          class="hidden min-[650px]:block"
-          :imgUrl="newsUrls[0]"
-          altText="test"
-          newsType="patch"
-        />
+        <EventCardVue class="hidden sm:block" :imgUrl="newsUrls[0]" altText="test" newsType="patch" />
       </div>
     </div>
   </div>
@@ -39,9 +34,9 @@ const newsUrls = ["https://placeimg.com/400/225/arch"]
 export default {
   components: { EventCardVue },
   data() {
-    return { 
+    return {
       sliderUrl,
-      newsUrls
+      newsUrls,
     }
   },
 }
