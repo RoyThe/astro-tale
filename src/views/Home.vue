@@ -13,7 +13,7 @@
       </div>
     </div>
     <!-- NEWS SECTION START -->
-    <div class="py-10 px-6 w-screen min-[1210px]:ml-[10vw]">
+    <div class="py-10 px-6 w-screen">
       <h1 class="mb-4 text-4xl font-extrabold">News</h1>
       <div class="w-full max-w-6xl h-auto flex justify-evenly m-0">
         <EventCardVue :imgUrl="newsUrls[0]" altText="test" newsType="event" />
