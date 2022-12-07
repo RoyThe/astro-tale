@@ -1,3 +1,5 @@
 <template>
-  <h1>helo nuews</h1>
+  <h1>
+    helo news
+  </h1>
 </template>
