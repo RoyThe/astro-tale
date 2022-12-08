@@ -4,11 +4,25 @@
     <label class="modal-box relative w-11/12 max-w-4xl">
       <div class="grid grid-cols-1 place-items-center">
         <div class="row-start-1 flex flex-wrap w-full items-center mb-4">
-          <span class="badge badge-primary uppercase float-left">{{ newsType }}</span>
+          <span v-if="newsType === 'patch'" class="badge badge-primary uppercase">{{ newsType }}</span>
+          <span v-else-if="newsType === 'event'" class="badge badge-secondary uppercase">{{ newsType }}</span>
+          <span v-else class="badge badge-accent uppercase">{{ newsType }}</span>
           <h3 class="text-2xl font-bold grow text-center">{{ title }}</h3>
           <p class="float-right grow-0">{{ date }}</p>
         </div>
         <figure class="my-1 row-start-2 w-full"><img class="w-full h-auto" :src="imgUrl" :alt="altText" /></figure>
+        <article class="prose row-start-3 justify-self-start p-4">
+          <h2>example</h2>
+          <p>
+            here's some example text you'd use for something long, eventually this will be synced to a markdown editor
+            you can implement anywhere, but until then please rely on demo text and Devin to do everything else
+          </p>
+          <b>updates</b>
+          <ul>
+            <li>updated thing on service here</li>
+            <li>created thing for something new</li>
+          </ul>
+        </article>
       </div>
     </label>
   </label>

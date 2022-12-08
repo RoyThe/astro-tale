@@ -1,13 +1,13 @@
 <template>
   <label :for="modalId">
-    <div class="card card-compact w-44 md:w-60 min-[1200px]:w-96 bg-base-100 shadow-xl hover:bg-base-200 hover:cursor-pointer">
+    <div class="card card-compact w-38 mx-1 md:w-60 min-[1200px]:w-96 bg-base-100 shadow-xl hover:bg-base-200 hover:cursor-pointer">
       <figure class="my-1"><img :src="imgUrl" :alt="altText" /></figure>
       <div class="card-body items-center">
-        <div class="badge badge-primary uppercase m-0 relative -top-8">{{ newsType }}</div>
+        <span v-if="newsType === 'patch'" class="badge badge-primary uppercase m-0 relative -top-8">{{ newsType }}</span>
+        <span v-else-if="newsType === 'event'" class="badge badge-secondary uppercase m-0 relative -top-8">{{ newsType }}</span>
+        <span v-else class="badge badge-accent uppercase m-0 relative -top-8">{{ newsType }}</span>
         <h2 class="card-title -mt-6 w-fit text-sm md:text-lg text-center">{{ title }}</h2>
         <p>{{ date }}</p>
-
-        <!-- TODO: only load necessary modal to match a given id -->
         <Modal
           :imgUrl="imgUrl"
           :altText="altText"
