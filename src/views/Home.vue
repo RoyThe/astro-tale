@@ -13,7 +13,7 @@
       </div>
     </div>
     <div
-      class="mt-5 w-screen grid place-items-center justify-center overflow-x-hidden gap-4 grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)] grid-rows-[]"
+      class="mt-5 w-screen grid place-items-center justify-center overflow-x-hidden gap-4 grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)]"
     >
       <!-- NEWS SECTION START -->
       <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-1">News</h1>
