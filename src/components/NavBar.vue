@@ -4,7 +4,7 @@
       <svgMenuVue />
     </label>
     <div class="flex-1 justify-center">
-      <RouterLink class="w-[100px] sm:w-[130px]" :to="{ name: 'home' }">
+      <RouterLink class="w-[100px] md:w-[130px]" :to="{ name: 'home' }">
         <img class="object-fit h-auto" src="./../../static/assets/lt_logo.png" />
       </RouterLink>
     </div>
