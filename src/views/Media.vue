@@ -13,23 +13,35 @@
         Featured Creators
       </h1>
       <div class="row-start-2 col-start-2 pb-8 flex place-content-center">
-        <div v-for="_ in [1, 2, 3]">
-          <EventCardVue
+          <CreatorCard
             :imgUrl="newsUrls[0]"
-            modalId="aieIsland"
+            modalId="first"
             altText="test"
-            newsType="event"
-            title="Prepare for Aie Island!"
-            date="2022.12.1"
+            newsType="1"
+            title="LeMars"
           />
-        </div>
+          <CreatorCard
+            :imgUrl="newsUrls[0]"
+            modalId="second"
+            altText="test"
+            newsType="2"
+            title="Script"
+          />
+          <CreatorCard
+            class="hidden sm:block"
+            :imgUrl="newsUrls[0]"
+            modalId="third"
+            altText="test"
+            newsType="3"
+            title="Bacon"
+          />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import EventCardVue from "../components/EventCard.vue"
+import CreatorCard from "../components/CreatorCard.vue"
 import bgSliderUrl from "./../../static/assets/lt-slider-misc.jpg?url"
 import bgUnderLineUrl from "./../../static/assets/lt_arrow.png"
 const newsUrls = ["https://placeimg.com/400/225/arch"]
@@ -38,6 +50,6 @@ export default {
   data() {
     return { bgSliderUrl, bgUnderLineUrl, newsUrls }
   },
-  components: { EventCardVue },
+  components: { CreatorCard },
 }
 </script>
