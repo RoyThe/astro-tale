@@ -1,5 +1,5 @@
 <template>
-  <div data-theme="light">
+  <div data-theme="autumn">
     <DrawerVue />
   </div>
 </template>

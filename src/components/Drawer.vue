@@ -48,7 +48,7 @@ const pages = [
   { title: "About", name: "about" },
   { title: "News", name: "news" },
   { title: "Media", name: "media" },
-  { title: "Update", name: "update" },
+  { title: "Updates", name: "update" },
   { title: "Forums", name: "forums" },
 ]
 
