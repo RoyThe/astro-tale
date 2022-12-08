@@ -8,6 +8,7 @@ Static assets are saved locally, place the folder in root.
 
 ## Versions
 
+**0.0.2** - latest development version with significant improvements
 **0.0.1** - version for primary navigation, CI/CD testing
 
 ## Known Issues
@@ -15,7 +16,7 @@ Static assets are saved locally, place the folder in root.
 <details>
   
   - [ ] drawer "Play Now" button text is faded
-  - [ ] breakpoints are manually set
+  - [x] breakpoints are manually set
   - [ ] logo image is like 400kb
 
 
