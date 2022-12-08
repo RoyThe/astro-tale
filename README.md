@@ -8,8 +8,9 @@ Static assets are saved locally, place the folder in root.
 
 ## Versions
 
-**0.0.2** - latest development version with significant improvements
-**0.0.1** - version for primary navigation, CI/CD testing
+**v0.0.2** - latest development version with significant improvements
+
+**v0.0.1** - version for primary navigation, CI/CD testing
 
 ## Known Issues
 
