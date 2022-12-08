@@ -22,8 +22,8 @@
           :imgUrl="newsUrls[0]"
           modalId="aieIsland"
           altText="test"
-          newsType="event"
-          title="Prepare for Aie Island!"
+          newsType="patch"
+          title="Hotfix v3.0.1"
           date="2022.12.1"
         />
         <EventCardVue
