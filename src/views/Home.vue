@@ -17,7 +17,7 @@
     >
       <!-- NEWS SECTION START -->
       <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-1">News</h1>
-      <div class="w-full h-auto flex justify-evenly m-0 col-start-2 row-start-2">
+      <div class="w-full h-auto flex justify-evenly col-start-2 row-start-2">
         <EventCardVue
           :imgUrl="newsUrls[0]"
           modalId="aieIsland"

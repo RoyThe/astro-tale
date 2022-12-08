@@ -1,6 +1,6 @@
 <template>
   <label :for="modalId">
-    <div class="card card-compact mx-1 bg-base-100 shadow-xl hover:bg-base-200 hover:cursor-pointer">
+    <div class="card card-compact mx-2 bg-base-100 shadow-xl hover:bg-base-200 hover:cursor-pointer">
       <figure class="my-1"><img :src="imgUrl" :alt="altText" /></figure>
       <div class="card-body items-center">
         <span v-if="newsType === 'patch'" class="badge badge-primary uppercase m-0 relative -top-8">{{ newsType }}</span>

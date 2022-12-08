@@ -8,7 +8,8 @@
           <span v-else-if="newsType === 'event'" class="badge badge-secondary uppercase">{{ newsType }}</span>
           <span v-else class="badge badge-accent uppercase">{{ newsType }}</span>
           <h3 class="text-2xl font-bold grow text-center">{{ title }}</h3>
-          <p class="float-right grow-0">{{ date }}</p>
+          <p class="float-right grow-0 mr-4">{{ date }}</p>
+          <label :for="modalId" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
         </div>
         <figure class="my-1 row-start-2 w-full"><img class="w-full h-auto" :src="imgUrl" :alt="altText" /></figure>
         <article class="prose row-start-3 justify-self-start p-4">
