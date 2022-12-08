@@ -10,10 +10,9 @@
       class="mt-5 w-screen grid place-items-center justify-center overflow-x-hidden gap-4 grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)]"
     >
       <div class="row-start-1 col-start-2 flex flex-wrap place-content-center">
-        <div v-for="_ in [1, 2, 3, 4, 5, 6]">
+        <div v-for="_ in [1, 2, 3, 4, 5, 6]" class="max-w-[250px]">
           <EventCardVue
           :imgUrl="newsUrls[0]"
-          class="max-w-[10px]"
           modalId="aieIsland"
           altText="test"
           newsType="event"
