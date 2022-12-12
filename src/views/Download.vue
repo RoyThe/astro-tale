@@ -27,32 +27,7 @@
     >
       <div class="row-start-1 col-start-2 flex flex-wrap place-content-center" id="downloads-table">
         <h1>Downloads</h1>
-        <table class="w-full text-left table-collapse">
-          <thead>
-            <tr>
-              <th class="text-sm font-semibold text-gray-700 p-2 bg-gray-100">Filename</th>
-              <th class="text-sm font-semibold text-gray-700 p-2 bg-gray-100">Size</th>
-              <th class="text-sm font-semibold text-gray-700 p-2 bg-gray-100">Type</th>
-              <th class="text-sm font-semibold text-gray-700 p-2 bg-gray-100">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="hover:bg-gray-100">
-              <td class="p-2 border-t">file1.pdf</td>
-              <td class="p-2 border-t">1.2 MB</td>
-              <td class="p-2 border-t">PDF</td>
-              <td class="p-2 border-t flex items-center">
-                <a href="#" class="text-blue-600 hover:underline">View</a>
-                <a href="#" class="ml-4 text-green-600 hover:underline">Download</a>
-              </td>
-            </tr>
-            <tr class="hover:bg-gray-100">
-              <td class="p-2 border-t">file2.docx</td>
-              <td class="p-2 border-t">2.5 MB</td>
-              <td class="p-2 border-t">Word</td>
-            </tr>
-          </tbody>
-        </table>
+        <!-- table goes here -->
       </div>
     </div>
   </div>
