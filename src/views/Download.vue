@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="scroll-smooth">
     <div class="hero min-h-screen" :style="`background-image: url(${bgUrl});`">
       <div class="hero-content text-center text-neutral-content bg-neutral rounded-lg w-10/12 max-w-6xl relative -top-16">
         <div class="max-w-[90%] py-4">
