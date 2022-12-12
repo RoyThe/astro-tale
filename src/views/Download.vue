@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="hero min-h-screen relative -top-1 -z-10" :style="`background-image: url(${bgUrl});`">
-      <div class="hero-content text-center text-neutral-content bg-neutral rounded-lg w-10/12 max-w-6xl z-0 relative -top-16">
+    <div class="hero min-h-screen" :style="`background-image: url(${bgUrl});`">
+      <div class="hero-content text-center text-neutral-content bg-neutral rounded-lg w-10/12 max-w-6xl relative -top-16">
         <div class="max-w-[90%] py-4">
           <p class="md:text-2xl">
             Embark on an epic quest with other Heroes from around the globe to battle against the forces of the Demon
