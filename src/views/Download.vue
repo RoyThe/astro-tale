@@ -15,19 +15,11 @@
           </h2>
           <br />
           <a
-            href="#downloads-table"
+            href="#"
             class="btn btn-primary min-w-[200px] w-6/12 h-auto text-lg font-extrabold md:text-2xl"
-            >View Downloads</a
+            >Download Now</a
           >
         </div>
-      </div>
-    </div>
-    <div
-      class="mt-5 w-screen grid place-items-center justify-center overflow-x-hidden gap-4 grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)]"
-    >
-      <div class="row-start-1 col-start-2 flex flex-wrap place-content-center" id="downloads-table">
-        <h1>Downloads</h1>
-        <!-- table goes here -->
       </div>
     </div>
   </div>
