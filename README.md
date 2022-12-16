@@ -23,6 +23,7 @@ Static assets are saved locally, place the folder in root.
      - give a sense of "things happening"
    - add hero element blurb about the game for visual candy
    - add socials
+   - add "change theme" button
  - About page
    - get design from Roy
  - News page
@@ -40,7 +41,7 @@ Static assets are saved locally, place the folder in root.
 
 <details>
   
-  - [ ] drawer "Play Now" button text is faded
+  - [ ] drawer "Play Now" button text doesn't match theme
   - [x] breakpoints are manually set
   - [ ] logo image is like 400kb
 
