@@ -21,6 +21,7 @@ Static assets are saved locally, place the folder in root.
    - fill in "Server Status" with relevant designs
      - display most recent info gathered from server
      - give a sense of "things happening"
+   - overlay banner is offset without images
    - add hero element blurb about the game for visual candy
    - add socials
    - add "change theme" button
