@@ -42,24 +42,12 @@
 <script>
 import NavBarVue from "./NavBar.vue"
 import svgMenuVue from "./svgMenu.vue"
-import HomeVue from "./../views/Home.vue"
-
-const pages = [
-  { title: "About", name: "about" },
-  { title: "News", name: "news" },
-  { title: "Media", name: "media" },
-  { title: "Updates", name: "update" },
-  { title: "Forums", name: "forums" },
-]
 
 export default {
-  data() {
-    return { pages }
-  },
+  props: ['pages'],
   components: {
     NavBarVue,
     svgMenuVue,
-    HomeVue,
   },
 }
 </script>
