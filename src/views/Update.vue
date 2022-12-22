@@ -24,7 +24,7 @@
       <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-3">
         Past Releases
       </h1>
-      <div class="row-start-4 col-start-2 flex flex-wrap place-content-center">
+      <div class="mb-16 row-start-4 col-start-2 flex flex-wrap place-content-center">
         <div v-for="_ in [1, 2, 3, 4, 5, 6]" class="max-w-[250px]">
           <EventCard
             :imgUrl="newsUrls[0]"

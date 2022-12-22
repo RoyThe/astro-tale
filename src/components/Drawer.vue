@@ -4,6 +4,7 @@
     <div class="drawer-content">
       <NavBarVue :links="pages" />
       <RouterView />
+      <FooterVue />
     </div>
     <div class="drawer-side">
       <label for="my-drawer" class="drawer-overlay"></label>
@@ -42,12 +43,14 @@
 <script>
 import NavBarVue from "./NavBar.vue"
 import svgMenuVue from "./svgMenu.vue"
+import FooterVue from "./Footer.vue"
 
 export default {
   props: ['pages'],
   components: {
     NavBarVue,
     svgMenuVue,
+    FooterVue
   },
 }
 </script>
