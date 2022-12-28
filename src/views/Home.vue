@@ -44,20 +44,16 @@
           date="2022.11.17"
         />
       </div>
+      <div class="w-full h-auto flex justify-evenly items-center m-0 col-start-2 row-start-3">
+        
+        <ServerStatusVue />
+      </div>
       <!-- SERVER STATUS / COMMUNITY -->
-      <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-3">
-        Server Status
+      <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-4">
+        Updates
       </h1>
-      <div class="w-full h-auto flex justify-evenly m-0 mb-16 col-start-2 row-start-4">
-        <EventCardVue :imgUrl="newsUrls[0]" modalId="pneumaModal" altText="test" newsType="event" />
-        <EventCardVue :imgUrl="newsUrls[0]" modalId="pneumaModal" altText="test" newsType="sale" />
-        <EventCardVue
-          class="hidden lg:block"
-          :imgUrl="newsUrls[0]"
-          modalId="pneumaModal"
-          altText="test"
-          newsType="patch"
-        />
+      <div class="w-full h-auto flex justify-evenly m-0 mb-16 col-start-2 row-start-5">
+        Update card views go here
       </div>
     </div>
   </div>
@@ -66,10 +62,11 @@
 <script>
 import sliderUrl from "./../../static/assets/lt-slider.jpg?url"
 import EventCardVue from "../components/EventCard.vue"
+import ServerStatusVue from "../components/ServerStatus.vue"
 const newsUrls = ["https://placeimg.com/400/225/arch"]
 
 export default {
-  components: { EventCardVue },
+  components: { EventCardVue, ServerStatusVue },
   data() {
     return {
       sliderUrl,
