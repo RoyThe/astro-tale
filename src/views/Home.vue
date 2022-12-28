@@ -50,10 +50,10 @@
       </div>
       <!-- SERVER STATUS / COMMUNITY -->
       <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-4">
-        Updates
+        Community
       </h1>
       <div class="w-full h-auto flex justify-evenly m-0 mb-16 col-start-2 row-start-5">
-        Update card views go here
+        TODO: media page 
       </div>
     </div>
   </div>
