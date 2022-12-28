@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="hero min-h-[50vh] lg:h-[80vh] bg-cover relative" :style="`background-image: url(${sliderUrl});`">
-      <div class="w-screen p-2 py-4 absolute bottom-0 bg-gradient-to-l from-slate-800 to-transparent">
+      <div class="w-full py-4 absolute bottom-0 bg-gradient-to-l from-slate-800 to-transparent">
         <div class="w-full flex justify-evenly">
           <button class="btn btn-wide btn-accent">
             <RouterLink :to="{ name: 'news' }">See Patch Notes</RouterLink>
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div
-      class="mt-5 w-screen grid place-items-center justify-center overflow-x-hidden gap-4 grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)]"
+      class="mt-5 w-full grid place-items-center justify-center overflow-x-hidden gap-4 grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)]"
     >
       <!-- NEWS SECTION START -->
       <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-1">News</h1>
