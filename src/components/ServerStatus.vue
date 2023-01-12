@@ -64,5 +64,8 @@
         <div class="stat-desc">↘︎ 90 (14%)</div>
       </div>
     </div>
+    <div>
+      console window here
+    </div>
   </div>
 </template>
