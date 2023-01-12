@@ -65,7 +65,15 @@
       </div>
     </div>
     <div>
-      console window here
+      <SocialsMenu />
     </div>
   </div>
 </template>
+
+<script>
+import SocialsMenu from "./SocialsMenu.vue"
+
+export default {
+  components: { SocialsMenu }
+}
+</script>
