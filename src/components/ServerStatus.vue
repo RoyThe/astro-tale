@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="stats shadow">
+    <div class="stats stats-vertical lg:stats-horizontal shadow">
       <div class="stat">
         <div class="stat-figure text-secondary">
           <svg
