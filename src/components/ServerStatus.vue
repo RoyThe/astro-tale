@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="stats stats-vertical lg:stats-horizontal shadow">
+  <div class="flex gap-4">
+    <div class="flex-none stats stats-vertical lg:stats-horizontal shadow">
       <div class="stat">
         <div class="stat-figure text-secondary">
           <svg
