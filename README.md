@@ -36,7 +36,8 @@ Static assets are saved locally, place the folder in root.
  - Updates
    - should also pull from local db like News
  - Forums
-   - design simple page with Discord link
+   - reroute to Discord
+ - Footer
 
 ## Known Issues
 
