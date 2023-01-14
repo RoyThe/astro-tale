@@ -14,30 +14,7 @@ Static assets are saved locally, place the folder in root.
 
 ## Next Steps
 
- - homepage needs to be finalized
-   - replace "News" with "Recent Updates"
-     - "Recent Updates" section should pull most recent update info from local db
-     - content should load a temporary "in loading" display while images load
-   - fill in "Server Status" with relevant designs
-     - display most recent info gathered from server
-     - give a sense of "things happening"
-   - overlay banner is offset without images
-   - add hero element blurb about the game for visual candy
-   - add socials
-   - add "change theme" button
- - About page
-   - get design from Roy
- - News page
-   - all recent news should come from local db
-   - add markdown parsing
- - Media page
-   - redesign creator modals, hardcoded with their social links
-   - add media scroller that grabs art / webcomic / whatever
- - Updates
-   - should also pull from local db like News
- - Forums
-   - reroute to Discord
- - Footer
+This section will be updated with the Notion board I used to manage this project
 
 ## Known Issues
 
