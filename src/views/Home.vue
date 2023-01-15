@@ -45,15 +45,14 @@
         />
       </div>
       <div class="w-full h-auto flex justify-evenly items-center m-0 col-start-2 row-start-3">
-        
         <ServerStatusVue />
       </div>
       <!-- SERVER STATUS / COMMUNITY -->
       <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-4">
-        Community
+        Media
       </h1>
       <div class="w-full h-auto flex justify-evenly m-0 mb-16 col-start-2 row-start-5">
-        TODO: media page 
+        <Carousel />
       </div>
     </div>
   </div>
@@ -63,10 +62,11 @@
 import sliderUrl from "./../../static/assets/lt-slider.jpg?url"
 import EventCardVue from "../components/EventCard.vue"
 import ServerStatusVue from "../components/ServerStatus.vue"
+import Carousel from "../components/Carousel.vue"
 const newsUrls = ["https://placeimg.com/400/225/arch"]
 
 export default {
-  components: { EventCardVue, ServerStatusVue },
+  components: { EventCardVue, ServerStatusVue, Carousel },
   data() {
     return {
       sliderUrl,
