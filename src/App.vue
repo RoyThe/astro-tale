@@ -1,5 +1,5 @@
 <template>
-  <div data-theme="autumn">
+  <div data-theme="dark">
     <DrawerVue :pages="pages"/>
   </div>
 </template>
