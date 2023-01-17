@@ -8,6 +8,8 @@ Static assets are saved locally, place the folder in root.
 
 ## Versions
 
+**v0.0.3** - nearly complete UI design awaiting Webflow CDN integration
+
 **v0.0.2** - latest development version with significant improvements
 
 **v0.0.1** - version for primary navigation, CI/CD testing
