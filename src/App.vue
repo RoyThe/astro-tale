@@ -6,6 +6,7 @@
 
 <script>
 import DrawerVue from "./components/Drawer.vue"
+
 const pages = [
   { title: "About", name: "about" },
   { title: "News", name: "news" },
