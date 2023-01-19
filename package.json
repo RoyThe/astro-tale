@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/vue-devtools & vite --port 4000",
+    "dev": "vite --port 4000",
+    "debug": "./node_modules/.bin/vue-devtools",
     "build": "vite build",
     "server": "vite preview"
   },
