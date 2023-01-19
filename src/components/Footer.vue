@@ -37,6 +37,18 @@
               d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
             ></path></svg
         ></a>
+        <a href="#twitch">
+          <svg class="h-8 w-8 fill-current" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+            <path d="M192.5 87.5H175V140H192.5V87.5Z"  />
+            <path d="M131.25 87.5H148.75V140H131.25V87.5Z"  />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M43.75 70L57.4699 35H245V166.25L192.5 218.75H148.75L121.502 245H87.5V218.75H43.75V70ZM192.5 183.75L227.5 148.75V52.5H78.75V183.75H113.75V210L140 183.75H192.5Z"
+              
+            />
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
