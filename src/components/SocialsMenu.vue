@@ -1,6 +1,6 @@
 <template>
-  <div class="static lg:absolute lg:-right-24 transition-all">
-    <ul class="menu bg-neutral bg-opacity-80 p-2 rounded-box">
+  <div>
+    <ul class="menu lg:menu-horizontal bg-neutral bg-opacity-80 p-2 rounded-box">
       <li>
         <a
           ><svg class="h-6 w-6 fill-accent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

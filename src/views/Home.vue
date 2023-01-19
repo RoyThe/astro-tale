@@ -44,7 +44,7 @@
           date="2022.11.17"
         />
       </div>
-      <div class="w-full h-auto flex justify-evenly items-center m-0 col-start-2 row-start-3 relative">
+      <div class="w-full h-auto flex justify-evenly items-center m-0 col-start-2 row-start-3">
         <ServerStatusVue />
         <SocialsMenu />
       </div>
