@@ -64,16 +64,9 @@
         <div class="stat-desc">↘︎ 90 (14%)</div>
       </div>
     </div>
-    <div>
-      <SocialsMenu />
-    </div>
   </div>
 </template>
 
 <script>
-import SocialsMenu from "./SocialsMenu.vue"
 
-export default {
-  components: { SocialsMenu }
-}
 </script>

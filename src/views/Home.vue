@@ -44,8 +44,9 @@
           date="2022.11.17"
         />
       </div>
-      <div class="w-full h-auto flex justify-evenly items-center m-0 col-start-2 row-start-3">
+      <div class="w-full h-auto flex justify-evenly items-center m-0 col-start-2 row-start-3 relative">
         <ServerStatusVue />
+        <SocialsMenu />
       </div>
       <!-- SERVER STATUS / COMMUNITY -->
       <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-4">Media</h1>
@@ -60,11 +61,12 @@
 import sliderUrl from "./../../static/assets/lt-slider.jpg?url"
 import EventCardVue from "../components/EventCard.vue"
 import ServerStatusVue from "../components/ServerStatus.vue"
+import SocialsMenu from "../components/SocialsMenu.vue"
 import Carousel from "../components/Carousel.vue"
 const newsUrls = ["https://placeimg.com/400/225/arch"]
 
 export default {
-  components: { EventCardVue, ServerStatusVue, Carousel },
+  components: { EventCardVue, ServerStatusVue, SocialsMenu, Carousel },
   data() {
     return {
       sliderUrl,
