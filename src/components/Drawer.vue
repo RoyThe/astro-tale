@@ -40,8 +40,7 @@
           <img class="h-16 w-auto rounded-lg" src="./../../static/assets/ag-logo.png" />
         </a>
         <div class="mt-4">
-          <div class="footer-title -mb-2">Social</div>
-          <br />
+          
           <SocialsMenuSecondary />
         </div>
       </ul>

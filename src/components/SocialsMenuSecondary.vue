@@ -1,5 +1,6 @@
 <template>
   <div>
+    <span class="footer-title">Social</span>
     <div class="grid grid-flow-col gap-4">
       <a href="#twitter"
         ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
