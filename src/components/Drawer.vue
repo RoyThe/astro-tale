@@ -36,14 +36,13 @@
           </button>
         </li>
         <div class="flex-grow"></div>
-
-          <a >
-            <img class="h-16 w-auto rounded-lg" src="./../../static/assets/ag-logo.png" />
-          </a>
-
-        <div class="mt-4 relative">
-          <span class="footer-title">Social</span>
-          <div>links</div>
+        <a>
+          <img class="h-16 w-auto rounded-lg" src="./../../static/assets/ag-logo.png" />
+        </a>
+        <div class="mt-4">
+          <div class="footer-title -mb-2">Social</div>
+          <br />
+          <SocialsMenuSecondary />
         </div>
       </ul>
     </div>
@@ -54,6 +53,7 @@
 import NavBarVue from "./NavBar.vue"
 import svgMenuVue from "./svgMenu.vue"
 import FooterVue from "./Footer.vue"
+import SocialsMenuSecondary from "./SocialsMenuSecondary.vue"
 
 export default {
   props: ["pages"],
@@ -61,6 +61,7 @@ export default {
     NavBarVue,
     svgMenuVue,
     FooterVue,
+    SocialsMenuSecondary,
   },
 }
 </script>
