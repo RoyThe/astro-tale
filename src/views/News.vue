@@ -9,16 +9,20 @@
     <div
       class="mt-5 w-full grid place-items-center justify-center overflow-x-hidden gap-4 grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)]"
     >
-      <div class="mb-16 row-start-1 col-start-2 flex flex-wrap place-content-center">
+      <div class="row-start-1 col-start-2 text-neutral-content justify-self-start text-3xl">
+        <h1>All</h1>
+        <div class="divider w-full"/>
+      </div>
+      <div class="mb-16 row-start-2 col-start-2 flex flex-wrap place-content-center">
         <div v-for="_ in [1, 2, 3, 4, 5, 6]" class="max-w-[250px]">
           <EventCardVue
-          :imgUrl="newsUrls[0]"
-          modalId="aieIsland"
-          altText="test"
-          newsType="event"
-          title="Prepare for Aie Island!"
-          date="2022.12.1"
-        />
+            :imgUrl="newsUrls[0]"
+            modalId="aieIsland"
+            altText="test"
+            newsType="event"
+            title="Prepare for Aie Island!"
+            date="2022.12.1"
+          />
         </div>
       </div>
     </div>
@@ -35,6 +39,6 @@ export default {
   data() {
     return { bgSliderUrl, bgUnderLineUrl, newsUrls }
   },
-  components: { EventCardVue }
+  components: { EventCardVue },
 }
 </script>
