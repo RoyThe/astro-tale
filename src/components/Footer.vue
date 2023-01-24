@@ -1,6 +1,8 @@
 <template>
   <footer class="footer p-10 bg-neutral text-neutral-content">
-    <img class="h-16 w-auto rounded-lg" src="./../../static/assets/ag-logo.png" />
+    <a>
+      <img class="h-16 w-auto rounded-lg" src="./../../static/assets/ag-logo.png" />
+    </a>
     <SocialsMenuSecondary />
   </footer>
 </template>
