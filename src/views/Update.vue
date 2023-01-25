@@ -10,9 +10,7 @@
       class="mt-5 w-full grid place-items-center justify-center overflow-x-hidden gap-4 grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)]"
     >
       <div class="col-start-2 row-start-1 justify-self-start w-full">
-        <h1 class="text-2xl md:text-4xl font-extrabold">
-          Latest Release
-        </h1>
+        <h1 class="text-2xl md:text-4xl font-extrabold">Latest Release</h1>
         <div class="divider" />
       </div>
       <EventCard
@@ -25,12 +23,10 @@
         date="2022.12.1"
       />
       <div class="text-2xl md:text-4xl font-extrabold justify-self-start col-start-2 row-start-3 w-full">
-        <h1>
-          Past Releases
-        </h1>
+        <h1>Past Releases</h1>
         <div class="divider" />
       </div>
-      
+
       <div class="mb-16 row-start-4 col-start-2 flex flex-wrap place-content-center">
         <div v-for="_ in [1, 2, 3, 4, 5, 6]" class="max-w-[250px]">
           <EventCard

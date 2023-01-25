@@ -9,32 +9,21 @@
     <div
       class="mt-5 w-full grid place-items-center justify-center overflow-x-hidden gap-4 grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)]"
     >
-      <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-1">
-        Featured Creators
-      </h1>
+      <div class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-1 w-full">
+        <h1>Featured Creators</h1>
+        <div class="divider" />
+      </div>
       <div class="row-start-2 col-start-2 pb-8 flex place-content-center">
-          <CreatorCard
-            :imgUrl="newsUrls[0]"
-            modalId="first"
-            altText="test"
-            newsType="1"
-            title="LeMars"
-          />
-          <CreatorCard
-            :imgUrl="newsUrls[0]"
-            modalId="second"
-            altText="test"
-            newsType="2"
-            title="Script"
-          />
-          <CreatorCard
-            class="hidden sm:block"
-            :imgUrl="newsUrls[0]"
-            modalId="third"
-            altText="test"
-            newsType="3"
-            title="Bacon"
-          />
+        <CreatorCard :imgUrl="newsUrls[0]" modalId="first" altText="test" newsType="1" title="LeMars" />
+        <CreatorCard :imgUrl="newsUrls[0]" modalId="second" altText="test" newsType="2" title="Script" />
+        <CreatorCard
+          class="hidden sm:block"
+          :imgUrl="newsUrls[0]"
+          modalId="third"
+          altText="test"
+          newsType="3"
+          title="Bacon"
+        />
       </div>
     </div>
   </div>
