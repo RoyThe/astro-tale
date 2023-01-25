@@ -32,8 +32,7 @@
 
 <script>
 import { marked } from 'marked'
-
-const temp = '## Marked in Node.js\n\nRendered by **marked**'
+const temp = '## Object in Event Modal\nRendered by **marked**'
 
 export default {
   data() {

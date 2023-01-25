@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import Modal from "./EventModal.vue"
+import Modal from "./NewsModal.vue"
 
 export default {
   props: {

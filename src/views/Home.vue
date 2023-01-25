@@ -65,10 +65,11 @@
 
 <script>
 import sliderUrl from "./../../static/assets/lt-slider.jpg?url"
-import EventCardVue from "../components/EventCard.vue"
+import EventCardVue from "../components/NewsCard.vue"
 import ServerStatusVue from "../components/ServerStatus.vue"
 import SocialsMenu from "../components/SocialsMenu.vue"
 import Carousel from "../components/Carousel.vue"
+
 const newsUrls = ["https://placeimg.com/400/225/arch"]
 
 export default {

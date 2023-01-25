@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import EventCard from "../components/EventCard.vue"
+import EventCard from "../components/NewsCard.vue"
 import bgSliderUrl from "./../../static/assets/lt-slider-misc.jpg?url"
 import bgUnderLineUrl from "./../../static/assets/lt_arrow.png"
 const newsUrls = ["https://placeimg.com/400/225/arch"]
