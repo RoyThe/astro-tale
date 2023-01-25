@@ -1,9 +1,10 @@
 <template>
   <div class="drawer">
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content">
-      <NavBarVue :links="pages" />
+    <div class="drawer-content flex flex-col">
+      <NavBarVue :links="pages" class="flex-none"/>
       <RouterView />
+      <div class="flex-grow" />
       <FooterVue />
     </div>
     <div class="drawer-side">
@@ -30,17 +31,18 @@
             <RouterLink :to="{ name: page.name }">{{ page.title }}</RouterLink>
           </li>
         </div>
+        <br />
         <li>
           <button class="btn btn-lg btn-primary rounded-none h-24 text-4xl">
             <RouterLink :to="{ name: 'download' }">Play Now</RouterLink>
           </button>
         </li>
+        <br />
         <div class="flex-grow"></div>
         <a>
           <img class="h-16 w-auto rounded-lg" src="./../../static/assets/ag-logo.png" />
         </a>
         <div class="mt-4">
-          
           <SocialsMenuSecondary />
         </div>
       </ul>
