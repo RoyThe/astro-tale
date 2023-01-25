@@ -9,7 +9,7 @@
     <div
       class="mt-5 pb-16 w-full grid place-items-center justify-center overflow-x-hidden gap-4 grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)]"
     >
-      <div class="row-start-1 col-start-2 text-neutral-content justify-self-start w-full text-3xl">
+      <div class="row-start-1 col-start-2 text-neutral-content justify-self-start w-full text-2xl md:text-4xl font-extrabold">
         <h1>All</h1>
         <div class="divider"/>
       </div>
