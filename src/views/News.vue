@@ -20,7 +20,7 @@
           <div v-if="cardLimit < 13">
             <EventCardVue
               :imgUrl="n.img"
-              modalId="aieIsland"
+              :modalId="JSON.stringify(n)"
               altText="test"
               :newsType="n.type"
               :title="n.title"
