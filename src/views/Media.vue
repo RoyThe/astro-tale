@@ -25,6 +25,13 @@
           title="Bacon"
         />
       </div>
+      <div class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-3 w-full">
+        <h1>Media</h1>
+        <div class="divider" />
+      </div>
+      <div class="col-start-2 row-start-4 mb-16">
+        <Carousel />
+      </div>
     </div>
   </div>
 </template>
@@ -33,12 +40,13 @@
 import CreatorCard from "../components/CreatorCard.vue"
 import bgSliderUrl from "./../../static/assets/lt-slider-misc.jpg?url"
 import bgUnderLineUrl from "./../../static/assets/lt_arrow.png"
+import Carousel from "../components/Carousel.vue"
 const newsUrls = ["https://placeimg.com/400/225/arch"]
 
 export default {
   data() {
     return { bgSliderUrl, bgUnderLineUrl, newsUrls }
   },
-  components: { CreatorCard },
+  components: { CreatorCard, Carousel },
 }
 </script>
