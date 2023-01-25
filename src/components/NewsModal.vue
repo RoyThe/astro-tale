@@ -24,6 +24,7 @@
             <li>created thing for something new</li>
           </ul>
           <div v-html="markdownToHtml" />
+          <div v-html="content" />
         </article>
       </div>
     </label>
@@ -40,7 +41,7 @@ export default {
   },
   computed: {
     markdownToHtml() {
-      return marked(this.temp)
+      return marked(temp)
     }
   },
   props: {
@@ -50,6 +51,7 @@ export default {
     title: String,
     date: String,
     newsType: String,
+    content: String,
   },
 }
 </script>

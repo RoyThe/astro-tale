@@ -15,6 +15,7 @@
           :newsType="newsType"
           :title="title"
           :date="date"
+          :content="content"
         />
       </div>
     </div>
@@ -32,6 +33,7 @@ export default {
     title: String,
     date: String,
     newsType: String,
+    content: String,
   },
   components: {
     Modal,
