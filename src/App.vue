@@ -12,7 +12,7 @@ const pages = [
   { title: "News", name: "news" },
   { title: "Media", name: "media" },
   { title: "Updates", name: "update" },
-  { title: "Forums", name: "forums" },
+  // { title: "Forums", name: "forums" },
 ]
 
 export default {

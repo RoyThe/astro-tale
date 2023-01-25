@@ -2,7 +2,7 @@
   <div class="drawer">
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
-      <NavBarVue :links="pages" class="flex-none"/>
+      <NavBarVue :links="pages" class="flex-none" />
       <RouterView />
       <div class="flex-grow" />
       <FooterVue />
@@ -31,6 +31,21 @@
             <RouterLink :to="{ name: page.name }">{{ page.title }}</RouterLink>
           </li>
         </div>
+        <li>
+          <a>
+            Forums
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 h-4 opacity-50 -ml-2"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </a>
+        </li>
         <br />
         <li>
           <button class="btn btn-lg btn-primary rounded-none h-24 text-4xl">
