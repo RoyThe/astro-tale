@@ -16,7 +16,10 @@
       class="mt-5 w-full grid place-items-center justify-center overflow-x-hidden gap-4 grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)]"
     >
       <!-- NEWS SECTION START -->
-      <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-1">News</h1>
+      <div class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-1 w-full">
+        <h1>News</h1>
+        <div class="divider" />
+      </div>
       <div class="w-full h-auto flex justify-evenly col-start-2 row-start-2">
         <EventCardVue
           :imgUrl="newsUrls[0]"
@@ -49,7 +52,10 @@
         <SocialsMenu />
       </div>
       <!-- SERVER STATUS / COMMUNITY -->
-      <h1 class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-4">Media</h1>
+      <div class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-4 w-full">
+        <h1>Media</h1>
+        <div class="divider" />
+      </div>
       <div class="w-full h-auto flex justify-evenly m-0 mb-16 col-start-2 row-start-5">
         <Carousel />
       </div>
