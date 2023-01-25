@@ -23,6 +23,7 @@
             <li>updated thing on service here</li>
             <li>created thing for something new</li>
           </ul>
+          <div v-html="markdownToHtml" />
         </article>
       </div>
     </label>
@@ -30,7 +31,19 @@
 </template>
 
 <script>
+import { marked } from 'marked'
+
+const temp = '## Marked in Node.js\n\nRendered by **marked**'
+
 export default {
+  data() {
+    return { temp }
+  },
+  computed: {
+    markdownToHtml() {
+      return marked(this.temp)
+    }
+  },
   props: {
     modalId: String,
     imgUrl: String,

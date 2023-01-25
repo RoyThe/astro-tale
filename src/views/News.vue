@@ -13,7 +13,7 @@
         <h1>All</h1>
         <div class="divider"/>
       </div>
-      <div class="row-start-2 col-start-2 flex flex-wrap place-content-center">
+      <div class="row-start-2 col-start-2 flex flex-wrap place-content-center gap-4">
         <div v-for="_ in parseInt(cardLimit)" class="max-w-[250px]">
           <EventCardVue
             :imgUrl="newsUrls[0]"

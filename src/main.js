@@ -4,7 +4,7 @@ import App from "./App.vue"
 import router from "./plugins/router"
 import "./app.css"
 
-// TODO: make dependent on dotenv
+// TODO: dotenv
 // devtools.connect(/* host, port */)
 
 createApp(App).use(router).mount("#app")
