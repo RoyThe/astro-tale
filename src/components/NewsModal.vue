@@ -13,17 +13,6 @@
         </div>
         <figure class="my-1 row-start-2 w-full"><img class="w-full h-auto" :src="imgUrl" :alt="altText" /></figure>
         <article class="prose row-start-3 justify-self-start p-4">
-          <h2>example</h2>
-          <p>
-            here's some example text you'd use for something long, eventually this will be synced to a markdown editor
-            you can implement anywhere, but until then please rely on demo text and Devin to do everything else
-          </p>
-          <b>updates</b>
-          <ul>
-            <li>updated thing on service here</li>
-            <li>created thing for something new</li>
-          </ul>
-          <div v-html="markdownToHtml" />
           <div v-html="content" />
         </article>
       </div>
@@ -32,18 +21,7 @@
 </template>
 
 <script>
-import { marked } from 'marked'
-const temp = '## Object in Event Modal\nRendered by **marked**'
-
 export default {
-  data() {
-    return { temp }
-  },
-  computed: {
-    markdownToHtml() {
-      return marked(temp)
-    }
-  },
   props: {
     modalId: String,
     imgUrl: String,

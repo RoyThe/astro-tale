@@ -9,9 +9,11 @@
     <div
       class="mt-5 pb-16 w-full grid place-items-center justify-center overflow-x-hidden gap-4 grid-cols-[minmax(0,_100px)_minmax(auto,_80rem)_minmax(0,_100px)]"
     >
-      <div class="row-start-1 col-start-2 text-neutral-content justify-self-start w-full text-2xl md:text-4xl font-extrabold">
+      <div
+        class="row-start-1 col-start-2 text-neutral-content justify-self-start w-full text-2xl md:text-4xl font-extrabold"
+      >
         <h1>All</h1>
-        <div class="divider"/>
+        <div class="divider" />
       </div>
       <div class="row-start-2 col-start-2 flex flex-wrap place-content-center gap-4">
         <div v-for="_ in parseInt(cardLimit)" class="max-w-[250px]">
@@ -22,25 +24,35 @@
             newsType="event"
             title="Prepare for Aie Island!"
             date="2022.12.1"
+            :content="temp"
           />
         </div>
       </div>
-      <button v-if="cardLimit < 13" @click="cardLimit+=3" class="mt-4 btn btn-outline row-start-3 col-start-2"> Show More </button>
+      <button v-if="cardLimit < 13" @click="cardLimit += 3" class="mt-4 btn btn-outline row-start-3 col-start-2">
+        Show More
+      </button>
     </div>
   </div>
 </template>
 
 <script>
+import { marked } from "marked"
 import EventCardVue from "../components/NewsCard.vue"
 import bgSliderUrl from "./../../static/assets/lt-slider-misc.jpg?url"
 import bgUnderLineUrl from "./../../static/assets/lt_arrow.png"
+import { news } from "./../../static/assets/content.json"
 
 const newsUrls = ["https://placeimg.com/400/225/arch"]
 const cardLimit = 6
+news.sort((a, b) => {
+  return new Date(a.date) - new Date(b.date)
+})
+
+const temp = marked.parse(news[0].body)
 
 export default {
   data() {
-    return { bgSliderUrl, bgUnderLineUrl, newsUrls, cardLimit }
+    return { bgSliderUrl, bgUnderLineUrl, newsUrls, cardLimit, temp }
   },
   components: { EventCardVue },
 }
