@@ -16,19 +16,21 @@
         <div class="divider" />
       </div>
       <div class="row-start-2 col-start-2 flex flex-wrap place-content-center gap-4">
-        <div v-for="_ in parseInt(cardLimit)" class="max-w-[250px]">
-          <EventCardVue
-            :imgUrl="newsUrls[0]"
-            modalId="aieIsland"
-            altText="test"
-            newsType="event"
-            title="Prepare for Aie Island!"
-            date="2022.12.1"
-            :content="temp"
-          />
+        <div v-for="n in news" class="max-w-[250px]">
+          <div v-if="cardLimit < 13">
+            <EventCardVue
+              :imgUrl="n.img"
+              modalId="aieIsland"
+              altText="test"
+              :newsType="n.type"
+              :title="n.title"
+              :date="n.date"
+              :content="n.body"
+            />
+          </div>
         </div>
       </div>
-      <button v-if="cardLimit < 13" @click="cardLimit += 3" class="mt-4 btn btn-outline row-start-3 col-start-2">
+      <button v-if="cardLimit > 6" @click="cardLimit += 3" class="mt-4 btn btn-outline row-start-3 col-start-2">
         Show More
       </button>
     </div>
@@ -44,15 +46,17 @@ import { news } from "./../../static/assets/content.json"
 
 const newsUrls = ["https://placeimg.com/400/225/arch"]
 const cardLimit = 6
+
 news.sort((a, b) => {
   return new Date(a.date) - new Date(b.date)
 })
-
-const temp = marked.parse(news[0].body)
+news.forEach((n) => {
+  n.body = marked.parse(n.body)
+})
 
 export default {
   data() {
-    return { bgSliderUrl, bgUnderLineUrl, newsUrls, cardLimit, temp }
+    return { bgSliderUrl, bgUnderLineUrl, newsUrls, cardLimit, news }
   },
   components: { EventCardVue },
 }
