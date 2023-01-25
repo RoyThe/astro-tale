@@ -3,3 +3,4 @@ static/assets
 static/patches
 .DS_STORE
 dist/assets
+.vitepress
