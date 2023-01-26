@@ -8,6 +8,8 @@ Static assets are saved locally, place the folder in root.
 
 ## Versions
 
+**v0.0.4** - finished design and approaching release
+
 **v0.0.3** - nearly complete UI design awaiting Webflow CDN integration
 
 **v0.0.2** - latest development version with significant improvements
@@ -17,14 +19,3 @@ Static assets are saved locally, place the folder in root.
 ## Next Steps
 
 This section will be updated with the Notion board I used to manage this project
-
-## Known Issues
-
-<details>
-  
-  - [ ] drawer "Play Now" button text doesn't match theme
-  - [x] breakpoints are manually set
-  - [ ] logo image is like 400kb
-
-
-</details>
