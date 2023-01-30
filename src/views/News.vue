@@ -17,7 +17,7 @@
       </div>
       <div class="row-start-2 col-start-2 flex flex-wrap place-content-center gap-4">
         <div v-for="n in news" class="max-w-[250px]">
-          <div v-if="cardLimit < 13">
+          <div v-if="numCards <= cardLimit">
             <EventCardVue
               :imgUrl="n.img"
               :modalId="JSON.stringify(n)"
@@ -30,7 +30,7 @@
           </div>
         </div>
       </div>
-      <button v-if="cardLimit > 6" @click="cardLimit += 3" class="mt-4 btn btn-outline row-start-3 col-start-2">
+      <button v-if="numCards < news.length" @click="cardLimit += 3" class="mt-4 btn btn-outline row-start-3 col-start-2">
         Show More
       </button>
     </div>
@@ -46,6 +46,7 @@ import { news } from "./../../static/assets/content.json"
 
 const newsUrls = ["https://placeimg.com/400/225/arch"]
 const cardLimit = 6
+let numCards = 6
 
 news.sort((a, b) => {
   return new Date(a.date) - new Date(b.date)
@@ -56,7 +57,7 @@ news.forEach((n) => {
 
 export default {
   data() {
-    return { bgSliderUrl, bgUnderLineUrl, newsUrls, cardLimit, news }
+    return { bgSliderUrl, bgUnderLineUrl, newsUrls, numCards, cardLimit, news }
   },
   components: { EventCardVue },
 }
