@@ -15,7 +15,7 @@
     >
       <RouterLink :to="{ name: page.name }"> {{ page.title }} </RouterLink>
     </div>
-    <a href="#" class="pl-4 lg:pl-0 hidden md:inline-flex flex-1 justify-center text-slate-50 text-2xl hover:text-primary">
+    <a href="#" class="pl-1 hidden md:inline-flex flex-1 justify-center text-slate-50 text-2xl hover:text-primary">
       Forums
       <svg
         xmlns="http://www.w3.org/2000/svg"
