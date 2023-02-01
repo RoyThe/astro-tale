@@ -18,7 +18,7 @@
       <div class="row-start-2 col-start-2 flex flex-wrap place-content-center gap-4">
         <div v-for="[index, n] in news.entries()" class="max-w-[250px]">
           <div v-if="index < cardLimit">
-            <EventCardVue
+            <NewsCard
               :imgUrl="n.img"
               :modalId="JSON.stringify(n)"
               altText="test"
@@ -38,19 +38,18 @@
 </template>
 
 <script>
-import EventCardVue from "../components/NewsCard.vue"
+import NewsCard from "../components/NewsCard.vue"
 import bgSliderUrl from "./../../static/assets/lt-slider-misc.jpg?url"
 import bgUnderLineUrl from "./../../static/assets/lt_arrow.png"
 import { sortedNews } from "../services/cardContent"
 
-const newsUrls = ["https://placeimg.com/400/225/arch"]
 const cardLimit = 3
 const news = sortedNews()
 
 export default {
   data() {
-    return { bgSliderUrl, bgUnderLineUrl, newsUrls, cardLimit, news }
+    return { bgSliderUrl, bgUnderLineUrl, cardLimit, news }
   },
-  components: { EventCardVue },
+  components: { NewsCard },
 }
 </script>
