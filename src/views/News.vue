@@ -41,11 +41,11 @@
 import EventCardVue from "../components/NewsCard.vue"
 import bgSliderUrl from "./../../static/assets/lt-slider-misc.jpg?url"
 import bgUnderLineUrl from "./../../static/assets/lt_arrow.png"
-import { sortNews } from "../services/cardContent"
+import { sortedNews } from "../services/cardContent"
 
 const newsUrls = ["https://placeimg.com/400/225/arch"]
 const cardLimit = 3
-const news = sortNews()
+const news = sortedNews()
 
 export default {
   data() {

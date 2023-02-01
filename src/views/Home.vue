@@ -21,30 +21,33 @@
         <div class="divider" />
       </div>
       <div class="w-full h-auto flex justify-evenly col-start-2 row-start-2">
-        <EventCardVue
-          :imgUrl="newsUrls[0]"
-          modalId="aieIsland"
+        <NewsCard
+          :imgUrl="news[0].img"
+          :modalId="JSON.stringify(news[0])"
           altText="test"
-          newsType="patch"
-          title="Hotfix v3.0.1"
-          date="2022.12.1"
+          :newsType="news[0].type"
+          :title="news[0].title"
+          :date="news[0].date"
+          :content="news[0].body"
         />
-        <EventCardVue
-          :imgUrl="newsUrls[0]"
-          modalId="flashSales"
+        <NewsCard
+          :imgUrl="news[1].img"
+          :modalId="JSON.stringify(news[1])"
           altText="test"
-          newsType="sales"
-          title="Preparation Flash Sales"
-          date="2022.12.1"
+          :newsType="news[1].type"
+          :title="news[1].title"
+          :date="news[1].date"
+          :content="news[1].body"
         />
-        <EventCardVue
+        <NewsCard
           class="hidden lg:block"
-          :imgUrl="newsUrls[0]"
-          modalId="winterEvents"
+          :imgUrl="news[2].img"
+          :modalId="JSON.stringify(news[2])"
           altText="test"
-          newsType="event"
-          title="Upcoming Winter Events"
-          date="2022.11.17"
+          :newsType="news[2].type"
+          :title="news[2].title"
+          :date="news[2].date"
+          :content="news[2].body"
         />
       </div>
       <div class="w-full h-auto flex justify-evenly items-center m-0 col-start-2 row-start-3">
@@ -65,19 +68,20 @@
 
 <script>
 import sliderUrl from "./../../static/assets/lt-slider.jpg?url"
-import EventCardVue from "../components/NewsCard.vue"
+import NewsCard from "../components/NewsCard.vue"
 import ServerStatusVue from "../components/ServerStatus.vue"
 import SocialsMenu from "../components/SocialsMenu.vue"
 import Carousel from "../components/Carousel.vue"
+import { sortedNews } from "../services/cardContent"
 
-const newsUrls = ["https://placeimg.com/400/225/arch"]
+const news = sortedNews().reverse().slice(0, 3)
 
 export default {
-  components: { EventCardVue, ServerStatusVue, SocialsMenu, Carousel },
+  components: { NewsCard, ServerStatusVue, SocialsMenu, Carousel },
   data() {
     return {
       sliderUrl,
-      newsUrls,
+      news,
     }
   },
 }

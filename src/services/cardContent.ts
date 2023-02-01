@@ -29,9 +29,9 @@ const sortByDate = (arr: News[]): News[] => {
   }
 }
 
-export const sortNews = () => {
+export const sortedNews = (): News[] => {
   let temp = parseMarkdown(news)
   return sortByDate(temp)
 }
 
-export default { sortNews }
+export default { sortedNews }
