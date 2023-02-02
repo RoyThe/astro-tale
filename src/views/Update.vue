@@ -28,9 +28,10 @@
         <div class="divider" />
       </div>
 
-      <div class="mb-16 row-start-4 col-start-2 flex flex-wrap place-content-center">
+      <div class="row-start-4 col-start-2 flex flex-wrap place-content-center gap-y-4">
         <div v-for="[index, u] in updates.slice(1).entries()" class="max-w-[250px]">
-          <NewsCard
+          <div v-if="index < cardLimit">
+            <NewsCard
             altText="test"
             newsType="update"
             :imgUrl="u.img"
@@ -39,8 +40,17 @@
             :date="u.date"
             :content="u.body"
           />
+          </div>
         </div>
       </div>
+      <button
+        v-if="cardLimit < updates.length - 1"
+        @click="cardLimit += 3"
+        class="btn btn-outline row-start-5 col-start-2 mt-4"
+      >
+        Show More
+      </button>
+      <div class="row-start-6 col-start-2 h-16"/>
     </div>
   </div>
 </template>
