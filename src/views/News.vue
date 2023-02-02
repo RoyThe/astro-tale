@@ -19,9 +19,9 @@
         <div v-for="[index, n] in news.entries()" class="max-w-[250px]">
           <div v-if="index < cardLimit">
             <NewsCard
+              altText="test"
               :imgUrl="n.img"
               :modalId="JSON.stringify(n)"
-              altText="test"
               :newsType="n.type"
               :title="n.title"
               :date="n.date"
@@ -30,7 +30,11 @@
           </div>
         </div>
       </div>
-      <button v-if="cardLimit < news.length" @click="cardLimit += 3" class="mt-4 btn btn-outline row-start-3 col-start-2">
+      <button
+        v-if="cardLimit < news.length"
+        @click="cardLimit += 3"
+        class="mt-4 btn btn-outline row-start-3 col-start-2"
+      >
         Show More
       </button>
     </div>

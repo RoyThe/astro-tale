@@ -13,14 +13,15 @@
         <h1 class="text-2xl md:text-4xl font-extrabold">Latest Release</h1>
         <div class="divider" />
       </div>
-      <EventCard
+      <NewsCard
         class="row-start-2 col-start-2 pb-8"
-        :imgUrl="newsUrls[0]"
-        modalId="pneuma"
         altText="test"
         newsType="update"
-        title="Pneuma"
-        date="2022.12.1"
+        :imgUrl="updates[0].img"
+        :modalId="JSON.stringify(updates[0])"
+        :title="updates[0].title"
+        :date="updates[0].date"
+        :content="updates[0].body"
       />
       <div class="text-2xl md:text-4xl font-extrabold justify-self-start col-start-2 row-start-3 w-full">
         <h1>Past Releases</h1>
@@ -28,14 +29,15 @@
       </div>
 
       <div class="mb-16 row-start-4 col-start-2 flex flex-wrap place-content-center">
-        <div v-for="_ in [1, 2, 3, 4, 5, 6]" class="max-w-[250px]">
-          <EventCard
-            :imgUrl="newsUrls[0]"
-            modalId="pneuma"
+        <div v-for="[index, u] in updates.slice(1).entries()" class="max-w-[250px]">
+          <NewsCard
             altText="test"
             newsType="update"
-            title="Pneuma"
-            date="2022.12.1"
+            :imgUrl="u.img"
+            :modalId="JSON.stringify(u)"
+            :title="u.title"
+            :date="u.date"
+            :content="u.body"
           />
         </div>
       </div>
@@ -44,15 +46,23 @@
 </template>
 
 <script>
-import EventCard from "../components/NewsCard.vue"
+import NewsCard from "../components/NewsCard.vue"
 import bgSliderUrl from "./../../static/assets/lt-slider-misc.jpg?url"
 import bgUnderLineUrl from "./../../static/assets/lt_arrow.png"
-const newsUrls = ["https://placeimg.com/400/225/arch"]
+import { sortedUpdates } from "../services/cardContent"
+
+const cardLimit = 3
+const updates = sortedUpdates()
+
+if (updates.length < 1) {
+  // TODO handle this case
+  throw new Error("not enough updates")
+}
 
 export default {
   data() {
-    return { bgSliderUrl, bgUnderLineUrl, newsUrls }
+    return { bgSliderUrl, bgUnderLineUrl, cardLimit, updates }
   },
-  components: { EventCard },
+  components: { NewsCard },
 }
 </script>
