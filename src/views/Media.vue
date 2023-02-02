@@ -14,15 +14,30 @@
         <div class="divider" />
       </div>
       <div class="row-start-2 col-start-2 pb-8 flex place-content-center">
-        <CreatorCard :imgUrl="newsUrls[0]" modalId="first" altText="test" newsType="1" title="LeMars" />
-        <CreatorCard :imgUrl="newsUrls[0]" modalId="second" altText="test" newsType="2" title="Script" />
+        <CreatorCard
+          altText="test"
+          position="1"
+          :imgUrl="creators[0].img"
+          :modalId="JSON.stringify(creators[0])"
+          :title="creators[0].name"
+          :content="creators[0].body"
+        />
+        <CreatorCard
+          altText="test"
+          position="2"
+          :imgUrl="creators[1].img"
+          :modalId="JSON.stringify(creators[1])"
+          :title="creators[1].name"
+          :content="creators[1].body"
+        />
         <CreatorCard
           class="hidden sm:block"
-          :imgUrl="newsUrls[0]"
-          modalId="third"
           altText="test"
-          newsType="3"
-          title="Bacon"
+          position="3"
+          :imgUrl="creators[2].img"
+          :modalId="JSON.stringify(creators[2])"
+          :title="creators[2].name"
+          :content="creators[2].body"
         />
       </div>
       <div class="text-2xl md:text-4xl font-extrabold justify-self-start self-center col-start-2 row-start-3 w-full">
@@ -41,11 +56,16 @@ import CreatorCard from "../components/CreatorCard.vue"
 import bgSliderUrl from "./../../static/assets/lt-slider-misc.jpg?url"
 import bgUnderLineUrl from "./../../static/assets/lt_arrow.png"
 import Carousel from "../components/Carousel.vue"
-const newsUrls = ["https://placeimg.com/400/225/arch"]
+import { getCreators } from "../services/cardContent"
+
+const creators = getCreators()
+if (creators.length !== 3) {
+  throw new Error('not exactly 3 creators')
+}
 
 export default {
   data() {
-    return { bgSliderUrl, bgUnderLineUrl, newsUrls }
+    return { bgSliderUrl, bgUnderLineUrl, creators }
   },
   components: { CreatorCard, Carousel },
 }

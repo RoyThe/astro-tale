@@ -39,7 +39,12 @@ const getUpdates = (): Updates[] => {
 }
 
 const getCreators = (): Creators[] => {
-  return creators as Creators[]
+  const temp = creators as Creators[]
+  temp.sort((a, b) => a.position - b.position)
+  temp.forEach(u => {
+    u.body = marked.parse(u.body)
+  })
+  return temp
 }
 
 export { getNews, getUpdates, getCreators }
