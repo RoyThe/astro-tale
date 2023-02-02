@@ -56,7 +56,7 @@ import CreatorCard from "../components/CreatorCard.vue"
 import bgSliderUrl from "./../../static/assets/lt-slider-misc.jpg?url"
 import bgUnderLineUrl from "./../../static/assets/lt_arrow.png"
 import Carousel from "../components/Carousel.vue"
-import { getCreators } from "../services/cardContent"
+import { getCreators } from "../services/getCardContent"
 
 const creators = getCreators()
 if (creators.length !== 3) {

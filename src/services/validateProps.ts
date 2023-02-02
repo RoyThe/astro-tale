@@ -1,29 +1,37 @@
-import { News } from "./types"
+import { CardContent, Creators, News, Updates } from "./types"
 
-// const isParsedArgs = (args: unknown): args is ParsedArgs => 
-//   typeof args == "object"
-//   && 'daily_exercises' in (args as ParsedArgs)
-//   && 'target' in (args as ParsedArgs);
-
-// const isValidData = (args: ParsedArgs): args is ParsedArgs =>
-//   !isNaN(Number(args.target))
-//   && Array.isArray(args.daily_exercises)
-//   && args.daily_exercises.filter(num => isNaN(Number(num))).length === 0;
-
-const checkForBodyProp = (arr: News[]): void | Error => {
-  arr.forEach((item) => {
-    if (!("body" in item) || undefined === item.body) {
-      return new Error(`body not found in ${item}`)
-    }
-  })
+const isString = (x: unknown): boolean => {
+  return Object.prototype.toString.call(x) === "[object String]"
 }
 
-const checkForDateProp = (arr: News[]) => {
-  arr.forEach((item) => {
-    if (!("date" in item) || undefined === item.date) {
-      throw new Error(`date not found in ${item}`)
-    }
-  })
-}
+const isCardContent = (args: unknown): args is CardContent =>
+  typeof args == "object" &&
+  "body" in (args as CardContent) &&
+  "img" in (args as CardContent) &&
+  (("title" in (args as CardContent) && "type" in (args as CardContent)) || "name" in (args as CardContent)) &&
+  ("date" in (args as CardContent) || "position" in (args as CardContent))
 
-export { checkForBodyProp, checkForDateProp }
+const isNews = (args: unknown): args is News =>
+  isCardContent(args) &&
+  isString(args.body) &&
+  isString(args.img) &&
+  "type" in args &&
+  "title" in args &&
+  isString(args.title) &&
+  isString(args.type) &&
+  !("name" in args) &&
+  !("position" in args)
+
+const isUpdates = (args: unknown): args is Updates => isNews(args) && !isCreators(args) && args.type === "update"
+
+const isCreators = (args: unknown): args is Creators =>
+  isCardContent(args) &&
+  isString(args.body) &&
+  isString(args.img) &&
+  "name" in args &&
+  "position" in args &&
+  !isNaN(Number(args.position)) &&
+  Number(args.position) > 0 &&
+  Number(args.position) < 4
+
+export { isCardContent, isNews, isUpdates, isCreators }

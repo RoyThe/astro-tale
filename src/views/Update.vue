@@ -59,7 +59,7 @@
 import NewsCard from "../components/NewsCard.vue"
 import bgSliderUrl from "./../../static/assets/lt-slider-misc.jpg?url"
 import bgUnderLineUrl from "./../../static/assets/lt_arrow.png"
-import { getUpdates } from "../services/cardContent"
+import { getUpdates } from "../services/getCardContent"
 
 const cardLimit = 3
 const updates = getUpdates()

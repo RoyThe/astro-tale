@@ -16,3 +16,5 @@ export interface Creators {
   img: string
   body: string
 }
+
+export type CardContent = News | Updates | Creators
