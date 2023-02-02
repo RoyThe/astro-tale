@@ -72,9 +72,9 @@ import NewsCard from "../components/NewsCard.vue"
 import ServerStatusVue from "../components/ServerStatus.vue"
 import SocialsMenu from "../components/SocialsMenu.vue"
 import Carousel from "../components/Carousel.vue"
-import { sortedNews } from "../services/cardContent"
+import { getNews } from "../services/cardContent"
 
-const news = sortedNews().slice(0, 3)
+const news = getNews().slice(0, 3)
 
 export default {
   components: { NewsCard, ServerStatusVue, SocialsMenu, Carousel },

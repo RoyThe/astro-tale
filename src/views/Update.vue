@@ -59,10 +59,10 @@
 import NewsCard from "../components/NewsCard.vue"
 import bgSliderUrl from "./../../static/assets/lt-slider-misc.jpg?url"
 import bgUnderLineUrl from "./../../static/assets/lt_arrow.png"
-import { sortedUpdates } from "../services/cardContent"
+import { getUpdates } from "../services/cardContent"
 
 const cardLimit = 3
-const updates = sortedUpdates()
+const updates = getUpdates()
 
 if (updates.length < 1) {
   // TODO handle this case

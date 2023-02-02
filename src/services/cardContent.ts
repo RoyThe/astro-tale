@@ -1,7 +1,7 @@
 import { marked } from "marked"
-import { news } from "../../static/assets/content.json"
+import { news, creators } from "../../static/assets/content.json"
 import { checkForBodyProp, checkForDateProp } from "./validateProps"
-import { News, Updates } from "./types"
+import { News, Updates, Creators } from "./types"
 
 const parseMarkdown = (arr: News[]): News[] => {
   try {
@@ -29,13 +29,17 @@ const sortByDate = (arr: News[]): News[] => {
   }
 }
 
-const sortedUpdates = (): Updates[] => {
-  return sortedNews().filter(n => n.type === "update") as Updates[]
-}
-
-const sortedNews = (): News[] => {
+const getNews = (): News[] => {
   let temp = parseMarkdown(news)
   return sortByDate(temp)
 }
 
-export { sortedNews, sortedUpdates }
+const getUpdates = (): Updates[] => {
+  return getNews().filter(n => n.type === "update") as Updates[]
+}
+
+const getCreators = (): Creators[] => {
+  return creators as Creators[]
+}
+
+export { getNews, getUpdates, getCreators }
