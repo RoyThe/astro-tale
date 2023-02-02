@@ -2,9 +2,9 @@
 
 ## How to run
 
-Feel free to clone this repo and run `npm i && npm run server` to see latest build.
+Feel free to clone this repo and run `npm i` to get started, place the `static` directory in root (next to src), then `npm run build && npm run server` to see it locally.
 
-Static assets are saved locally, place the folder in root.
+Static assets provided on request.
 
 ## Versions
 

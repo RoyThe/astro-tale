@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite --port 4000",
-    "debug": "./node_modules/.bin/vue-devtools",
     "build": "vite build",
     "server": "vite preview",
     "tsc": "tsc"
