@@ -20,7 +20,7 @@ const sortByDate = (arr: News[]): News[] => {
   try {
     checkForDateProp(arr)
     arr.sort((a, b) => {
-      return +new Date(a.date) - +new Date(b.date)
+      return +new Date(b.date) - +new Date(a.date)
     })
     return arr
   } catch (error) {

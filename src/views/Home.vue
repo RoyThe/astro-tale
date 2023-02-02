@@ -74,7 +74,7 @@ import SocialsMenu from "../components/SocialsMenu.vue"
 import Carousel from "../components/Carousel.vue"
 import { sortedNews } from "../services/cardContent"
 
-const news = sortedNews().reverse().slice(0, 3)
+const news = sortedNews().slice(0, 3)
 
 export default {
   components: { NewsCard, ServerStatusVue, SocialsMenu, Carousel },
