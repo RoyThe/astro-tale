@@ -15,7 +15,7 @@
         <h1>All</h1>
         <div class="divider" />
       </div>
-      <div class="row-start-2 col-start-2 flex flex-wrap place-content-center gap-4">
+      <div class="row-start-2 col-start-2 flex flex-wrap place-content-center gap-y-4">
         <div v-for="[index, n] in news.entries()" class="max-w-[250px]">
           <div v-if="index < cardLimit">
             <NewsCard
