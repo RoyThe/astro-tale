@@ -3,12 +3,12 @@
     <div class="hero min-h-[50vh] lg:h-[80vh] bg-cover relative" :style="`background-image: url(${sliderUrl});`">
       <div class="w-full py-4 absolute bottom-0 bg-gradient-to-l from-slate-800 to-transparent">
         <div class="w-full flex justify-evenly">
-          <button class="btn btn-wide btn-accent">
-            <RouterLink :to="{ name: 'news' }">See Patch Notes</RouterLink>
-          </button>
-          <button class="btn btn-wide btn-accent hidden sm:block">
-            <RouterLink :to="{ name: 'download' }">Download</RouterLink>
-          </button>
+          <RouterLink :to="{ name: 'news' }">
+            <button class="btn btn-wide btn-accent">See Patch Notes</button>
+          </RouterLink>
+          <RouterLink :to="{ name: 'download' }">
+            <button class="btn btn-wide btn-accent hidden sm:block">Download</button></RouterLink
+          >
         </div>
       </div>
     </div>
