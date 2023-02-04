@@ -54,7 +54,7 @@
         </li>
         <br />
         <div class="flex-grow"></div>
-        <a>
+        <a href="https://www.astrogame.co">
           <img class="h-16 w-auto rounded-lg" src="https://astroLT.b-cdn.net/ag-logo.png" />
         </a>
         <div class="mt-4">

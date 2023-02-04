@@ -1,6 +1,6 @@
 <template>
   <footer class="footer p-10 bg-neutral text-neutral-content">
-    <a>
+    <a href="https://www.astrogame.co">
       <img class="h-16 w-auto rounded-lg" src="https://astroLT.b-cdn.net/ag-logo.png" />
     </a>
     <SocialsMenuSecondary />
