@@ -5,7 +5,7 @@
     </label>
     <div class="flex-1 justify-center">
       <RouterLink class="w-[100px] md:w-[130px]" :to="{ name: 'home' }">
-        <img class="object-fit h-auto" src="./../../static/assets/lt_logo.png" />
+        <img class="object-fit h-auto" src="https://astroLT.b-cdn.net/lt_logo.png " />
       </RouterLink>
     </div>
     <div class="btn btn-ghost drawer-button md:hidden px-3 invisible"><svgMenuVue /></div>
@@ -15,7 +15,7 @@
     >
       <RouterLink :to="{ name: page.name }"> {{ page.title }} </RouterLink>
     </div>
-    <a href="#" class="pl-1 hidden md:inline-flex flex-1 justify-center text-slate-50 text-2xl hover:text-primary">
+    <a href="https://discord.gg/xN58dnpPJx" class="pl-1 hidden md:inline-flex flex-1 justify-center text-slate-50 text-2xl hover:text-primary">
       Forums
       <svg
         xmlns="http://www.w3.org/2000/svg"

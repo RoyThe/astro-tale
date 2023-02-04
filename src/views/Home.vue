@@ -67,13 +67,13 @@
 </template>
 
 <script>
-import sliderUrl from "./../../static/assets/lt-slider.jpg?url"
 import NewsCard from "../components/NewsCard.vue"
 import ServerStatusVue from "../components/ServerStatus.vue"
 import SocialsMenu from "../components/SocialsMenu.vue"
 import Carousel from "../components/Carousel.vue"
 import { getNews } from "../services/getCardContent"
 
+const sliderUrl = "https://astroLT.b-cdn.net/lt-slider.jpg"
 const news = getNews().slice(0, 3)
 
 export default {

@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import bgUrl from "./../../static/assets/bg_1.jpg?url"
 const newsUrls = ["https://placeimg.com/400/225/arch"]
+const bgUrl = "https://astroLT.b-cdn.net/bg_1.jpg "
 
 export default {
   data() {

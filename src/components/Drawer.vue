@@ -12,7 +12,7 @@
       <ul class="menu p-4 w-72 gap-1 bg-neutral text-base-content">
         <div class="flex justify-between items-start py-2">
           <RouterLink class="w-[100px]" :to="{ name: 'home' }">
-            <img class="object-fit h-auto" src="./../../static/assets/lt_logo.png" />
+            <img class="object-fit h-auto" src="https://astroLT.b-cdn.net/lt_logo.png " />
           </RouterLink>
           <label for="my-drawer" class="btn btn-ghost drawer-button md:hidden text-white px-3">
             <svg
@@ -32,7 +32,7 @@
           </li>
         </div>
         <li>
-          <a>
+          <a href="https://discord.gg/xN58dnpPJx">
             Forums
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@
         <br />
         <div class="flex-grow"></div>
         <a>
-          <img class="h-16 w-auto rounded-lg" src="./../../static/assets/ag-logo.png" />
+          <img class="h-16 w-auto rounded-lg" src="https://astroLT.b-cdn.net/ag-logo.png" />
         </a>
         <div class="mt-4">
           <SocialsMenuSecondary />
