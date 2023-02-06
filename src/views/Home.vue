@@ -73,7 +73,7 @@ import SocialsMenu from "../components/SocialsMenu.vue"
 import Carousel from "../components/Carousel.vue"
 import { getNews } from "../services/getCardContent"
 
-const sliderUrl = "https://astroLT.b-cdn.net/lt-slider.jpg"
+const sliderUrl = "https://astroLT.b-cdn.net/lt-slider_2.jpg"
 const news = getNews().slice(0, 3)
 
 export default {
