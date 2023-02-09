@@ -1,5 +1,5 @@
 import { news, creators } from "../../static/assets/content.json"
-import { News, Updates, Creators } from "./types"
+import { News, Updates, Creators, CardContent } from "./types"
 import { isNews, isUpdates, isCreators } from "./validateProps"
 import { sortByDate } from "./sortByDate"
 import { parseMarkdown } from "./parseMarkdown"
@@ -32,8 +32,8 @@ const getUpdates = (): Updates[] | undefined => {
 
 const getCreators = (): Creators[] | undefined => {
   try {
-    const temp = creators.filter((c) => isCreators(c)) as Creators[]
-    temp.sort((a, b) => a.position - b.position)
+    const temp = creators.filter(c => isCreators(c)) as Creators[]
+    temp.sort((a, b) => Number(a.position) - Number(b.position))
     parseMarkdown(temp)
     return temp
   } catch (err: unknown) {

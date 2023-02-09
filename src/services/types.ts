@@ -12,7 +12,7 @@ export interface Updates extends News {
 
 export interface Creators {
   name: string
-  position: 1 | 2 | 3
+  position: '1' | '2' | '3'
   img: string
   body: string
 }
