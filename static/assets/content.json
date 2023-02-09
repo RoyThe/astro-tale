@@ -1,52 +1,61 @@
 {
-  "news": [
-    {
-      "title": "Lunar New Years Sale!",
-      "date": "2023-01-22",
-      "type": "sale",
-      "img": "",
-      "body": "## Happy Lunar New Years!\nWe here at Astro Games are thrilled to announce a sale in celebration of the year of the Rabbit, take a look at all discounts available here\nIn game **La Tale**\n- **30%** off dragon themed items\n- **new** rabbit emblem\n- **new** rabbit cloak\n- **removed** all unnecessary predators\n\nLooking forward to seeing everyone in game, we've seen more players than ever in the **US-east** region, so they're getting **double xp** weekend!"
-    },
-    {
-      "title": "Loaded from a file again!",
-      "date": "2023-01-16",
-      "type": "event",
-      "img": "",
-      "body": "## Temp\nNeed a way to reformat strings so they're aren't just one line..."
-    },
-    {
-      "title": "Loaded from ME again!",
-      "date": "2020-01-16",
-      "type": "patch",
-      "img": "",
-      "body": "## ME\n **again**"
-    },
-    {
-      "title": "Loaded from a gut again!",
-      "date": "2023-01-11",
-      "type": "update",
-      "img": "",
-      "body": "## gutss"
-    }
-  ],
-  "creators": [
-    {
-      "name": "Le Mars",
-      "position": 1,
-      "img": "",
-      "body": "## holy shit pls work\nI would be so **grateful**"
-    },
-    {
-      "name": "Script",
-      "position": 2,
-      "img": "",
-      "body": "## holy shit pls work\nI would be so **grateful**"
-    },
-    {
-      "name": "Bacon",
-      "position": 3,
-      "img": "",
-      "body": "## holy shit pls work\nI would be so **grateful**"
-    }
-  ]
+  "News": {
+    "news": [
+      {
+        "title": "Lunar New Years Sale!",
+        "date": "2023-01-22",
+        "type": "sale",
+        "img": "https://placeimg.com/400/225/arch",
+        "body": "## Happy Lunar New Years!\nWe here at Astro Games are thrilled to announce a sale in celebration of the year of the Rabbit, take a look at all discounts available here\nIn game **La Tale**\n- **30%** off dragon themed items\n- **new** rabbit emblem\n- **new** rabbit cloak\n- **removed** all unnecessary predators\n\nLooking forward to seeing everyone in game, we've seen more players than ever in the **US-east** region, so they're getting **double xp** weekend!"
+      },
+      {
+        "title": "Loaded from a file again!",
+        "date": "2023-01-16",
+        "type": "event",
+        "img": "https://placeimg.com/400/225/arch",
+        "body": "## Temp\nNeed a way to reformat strings so they're aren't just one line..."
+      },
+      {
+        "title": "Loaded from ME again!",
+        "date": "2020-01-16",
+        "type": "patch",
+        "img": "https://placeimg.com/400/225/arch",
+        "body": "## ME\n **again**"
+      },
+      {
+        "title": "Loaded from a gut again!",
+        "date": "2023-01-11",
+        "type": "update",
+        "img": "https://placeimg.com/400/225/arch",
+        "body": "## gut"
+      },
+      {
+        "title": "Zisk Plains Content Update",
+        "date": "03-20-2023",
+        "type": "update",
+        "img": "https://astroLT.b-cdn.net/lt-ziskplains-slider.jpg",
+        "body": "## New Content Update\n\n### New Area\n\n- Zisk Plains\n- Can be accessed through the portal in White Cole Canyon 5.\n\n### New Scenario Quests\n\n- Available to characters above Ascension level 1600.\n- Only available to those who have completed the previous scenario quest: [The End of a Kingdom].\n\n### New Instance Dungeons\n\n- Void Star [* Lv. 1600+]\n- Entry Count (Daily): 2\n- 2-Man Time Attack Instance Dungeon\n\n- Oblivion Lake [* Lv. 1700+]\n- Entry Count (Daily): 1\n- 6-Man Instance Dungeon\n\n### New Monsters\n\n### New NPCs\n\n### New Equipment\n\n- Void Brooch\n- Rete's Red Badge (Badge 1)\n- Rete's Blue Badge (Badge 3)\n- Vigor Aurora Badge (Badge 5)\n- Second Immortal Gaia Key\n- Second Mythic Gaia Key\n- Second Ethereal Gaia Key\n\n### New Codex\n\n- 23 Monster Illustrations\n- 1 Title Illustrations\n\n### New Title Codex\n\n- 4 New title codex\n\n### New Achievements\n\n- 4 New achievements\n\n### New Waypoint\n\n- Eastland: Zisk Plains\n\n### New Quests\n\n- 12 Main-scenario quests\n- 10 Sub-scenario quests\n- 47 Normal quests\n- 3 Repeatable quests\n- 9 Daily quests\n- 5 Random quests\n- 5 Champion quests\n\n### Guidebook Update\n\n- New quests, items, and dungeons have been added.\n\n### New Decorations\n\n- Acorn Damage Skin\n- Maple Damage Skin\n- Bella Damage Skin\n- Invisible Damage Skin\n- Lunar Damage Skin\n\n### New Hairstyles\n\n### Premium Bonus Changes\n\n- Great Bubbly Pet Coupon\n- Great Yomi Pet Coupon\n- Great Girini Pet Coupon\n- Great Petite Invoke Pet Coupon\n- Great Kailum Pet Coupon\n- Divine White Tiger Mount Coupon\n- 100% Titlebook Box II\n- Shadow Effect (30 Days) Coupon\n- Item Drug (+100) (x5)\n- EXP Potion (+1000) (x3)\n\n### Instance Dungeon Difficulty Changes\n\n- [Aurora Garden] Hard difficulty has been added.\n- [Aurora Garden] Ant Queen has been changed to a normal monster type.\n- [Aurora Garden] The HP of the summoned monster when normal monsters are killed has been changed to match the normal monsters.\n- [Monster Tree Valley] Monsters' HP and attacks have been reduced.\n- [Sky Coliseum] Hard mode monsters' HP has been reduced significantly.\n- [Mysterious Hall] Hard mode monsters' HP excluding Minerva has been reduced significantly.\n- [Mysterious Hall] Minerva’s HP in Easy and Normal mode has been increased.\n\n### Dungeon Reward Changes\n\n- All mini-boss and final rewards in dungeons above level 200 have been doubled. (Except for Sky Coliseum)\n- The materials earned from the repeatable quests from the following dungeons have been increased.\n    - Chamber of Hell\n    - Dragon Valley\n    - Divine Tree: Rapier\n    - Magic Training Center\n    - Magic Academy Headquarters\n    - Fallout Shelter\n    - Dream Oneiro\n    - Void Star\n    - Oblivion Lake\n\n### Obtainable Item Changes\n\n- Obtainable items from [Monster Tower] have been changed.\n    - Equipment will no longer be dropped.\n    - Titlebooks are available through daily quests.\n    - Daily quests can be obtained from [NPC Allen] at the Monster Tower Lobby.\n\n### Crafting and Upgrade Difficulty Changes\n\n- The difficulty of crafting and upgrading the following items has been modified.\n    -\n"
+      }
+    ],
+    "creators": [
+      {
+        "name": "person 1 Le Mars",
+        "position": "1",
+        "img": "https://placeimg.com/400/225/arch",
+        "body": "## holy shit pls work\nI would be so **grateful**"
+      },
+      {
+        "name": "person 2 Script",
+        "position": "2",
+        "img": "https://placeimg.com/400/225/arch",
+        "body": "## holy shit pls work\nI would be so **grateful**"
+      },
+      {
+        "name": "person 3 Bacon",
+        "position": "3",
+        "img": "https://placeimg.com/400/225/arch",
+        "body": "## holy shit pls work\nI would be so **grateful**"
+      }
+    ]
+  }
 }
