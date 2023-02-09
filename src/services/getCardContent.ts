@@ -32,8 +32,8 @@ const getUpdates = (): Updates[] | undefined => {
 
 const getCreators = (): Creators[] | undefined => {
   try {
-    const temp = creators.filter((c) => isCreators(c)) as Creators[]
-    temp.sort((a, b) => a.position - b.position)
+    const temp = creators.filter(c => isCreators(c)) as Creators[]
+    temp.sort((a, b) => Number(a.position) - Number(b.position))
     parseMarkdown(temp)
     return temp
   } catch (err: unknown) {
