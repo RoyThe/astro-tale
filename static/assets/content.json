@@ -1,32 +1,25 @@
 {
     "news": [
       {
-        "title": "Lunar New Years Sale!",
+        "title": "Zisk Plains Sale",
         "date": "2023-01-22",
         "type": "sale",
-        "img": "https://placeimg.com/400/225/arch",
+        "img": "https://cdn.papayaplay.com/SF/1615/4348/2076/slice-01.jpg",
         "body": "## Happy Lunar New Years!\nWe here at Astro Games are thrilled to announce a sale in celebration of the year of the Rabbit, take a look at all discounts available here\nIn game **La Tale**\n- **30%** off dragon themed items\n- **new** rabbit emblem\n- **new** rabbit cloak\n- **removed** all unnecessary predators\n\nLooking forward to seeing everyone in game, we've seen more players than ever in the **US-east** region, so they're getting **double xp** weekend!"
       },
       {
-        "title": "Loaded from a file again!",
+        "title": "Zisk Plains Events",
         "date": "2023-01-16",
         "type": "event",
-        "img": "https://placeimg.com/400/225/arch",
-        "body": "## Temp\nNeed a way to reformat strings so they're aren't just one line..."
+        "img": "https://cdn.papayaplay.com/SF/1615/4335/5725/slice-01.jpg",
+        "body": "## Check out our events"
       },
       {
-        "title": "Loaded from ME again!",
-        "date": "2020-01-16",
+        "title": "Zisk Plains Content Update",
+        "date": "2023-03-20",
         "type": "patch",
-        "img": "https://placeimg.com/400/225/arch",
-        "body": "## ME\n **again**"
-      },
-      {
-        "title": "Loaded from a gut again!",
-        "date": "2023-01-11",
-        "type": "update",
-        "img": "https://placeimg.com/400/225/arch",
-        "body": "## gut"
+        "img": "https://astroLT.b-cdn.net/lt-ziskplains-slider.jpg",
+        "body": "## New Content Update\n\n### New Area\n\n- Zisk Plains\n- Can be accessed through the portal in White Cole Canyon 5.\n\n### New Scenario Quests\n\n- Available to characters above Ascension level 1600.\n- Only available to those who have completed the previous scenario quest: [The End of a Kingdom].\n\n### New Instance Dungeons\n\n- Void Star [* Lv. 1600+]\n- Entry Count (Daily): 2\n- 2-Man Time Attack Instance Dungeon\n\n- Oblivion Lake [* Lv. 1700+]\n- Entry Count (Daily): 1\n- 6-Man Instance Dungeon\n\n"
       },
       {
         "title": "Zisk Plains Content Update",
@@ -38,22 +31,22 @@
     ],
     "creators": [
       {
-        "name": "person 1 Le Mars",
+        "name": "LeMars",
         "position": "1",
-        "img": "https://placeimg.com/400/225/arch",
-        "body": "## holy shit pls work\nI would be so **grateful**"
+        "img": "https://astroLT.b-cdn.net/lemarss.png",
+        "body": "## Youtube Content Creator"
       },
       {
-        "name": "person 2 Script",
+        "name": "NikkalodeonLT",
         "position": "2",
-        "img": "https://placeimg.com/400/225/arch",
-        "body": "## holy shit pls work\nI would be so **grateful**"
+        "img": "https://astroLT.b-cdn.net/nikk.png",
+        "body": "## Youtube Content Creator"
       },
       {
-        "name": "person 3 Bacon",
+        "name": "Amira",
         "position": "3",
-        "img": "https://placeimg.com/400/225/arch",
-        "body": "## holy shit pls work\nI would be so **grateful**"
+        "img": "https://astroLT.b-cdn.net/amiraz.png",
+        "body": "## Youtube Content Creator"
       }
     ]
   }
