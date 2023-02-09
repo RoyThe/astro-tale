@@ -1,5 +1,5 @@
 import { news, creators } from "../../static/assets/content.json"
-import { News, Updates, Creators, CardContent } from "./types"
+import { News, Updates, Creators } from "./types"
 import { isNews, isUpdates, isCreators } from "./validateProps"
 import { sortByDate } from "./sortByDate"
 import { parseMarkdown } from "./parseMarkdown"
