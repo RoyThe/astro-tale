@@ -52,12 +52,13 @@
 </template>
 
 <script>
+import contents_url from '../../static/assets/contents_url.json'
+
+
 import CreatorCard from "../components/CreatorCard.vue"
 import Carousel from "../components/Carousel.vue"
 import { getCreators } from "../services/getCardContent"
 
-const bgSliderUrl = "https://astroLT.b-cdn.net/lt-slider-misc.jpg"
-const bgUnderLineUrl = "https://astroLT.b-cdn.net/lt_arrow.png"
 const creators = getCreators()
 if (creators.length !== 3) {
   throw new Error('not exactly 3 creators')
@@ -65,7 +66,11 @@ if (creators.length !== 3) {
 
 export default {
   data() {
-    return { bgSliderUrl, bgUnderLineUrl, creators }
+    return { 
+      bgSliderUrl: contents_url.bgSliderUrl,
+      bgUnderLineUrl: contents_url.bgUnderLineUrl, 
+      creators 
+    }
   },
   components: { CreatorCard, Carousel },
 }

@@ -56,11 +56,10 @@
 </template>
 
 <script>
+import contents_url from '../../static/assets/contents_url.json'
 import NewsCard from "../components/NewsCard.vue"
 import { getUpdates } from "../services/getCardContent"
 
-const bgSliderUrl = "https://astroLT.b-cdn.net/lt-slider-misc.jpg"
-const bgUnderLineUrl = "https://astroLT.b-cdn.net/lt_arrow.png"
 const cardLimit = 3
 const updates = getUpdates()
 
@@ -71,7 +70,12 @@ if (updates.length < 1) {
 
 export default {
   data() {
-    return { bgSliderUrl, bgUnderLineUrl, cardLimit, updates }
+    return { 
+      bgSliderUrl: contents_url.bgSliderUrl,
+      bgUnderLineUrl: contents_url.bgUnderLineUrl, 
+      cardLimit, 
+      updates 
+    }
   },
   components: { NewsCard },
 }
