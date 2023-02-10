@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index,follow" />
     <meta name="description" content="" />
-    <link rel="shortcut icon" type="image/png" href="https://astroLT.b-cdn.net/favicon.ico"/>
+    <script type="text/javascript" src="static/assets/contents_url.json"></script>
+    <link rel="shortcut icon" type="image/png" href="<script>document.write(contents_url.faviconURL);</script>" />
   </head>
   <body id="latale">
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+
