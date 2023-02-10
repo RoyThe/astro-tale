@@ -12,7 +12,7 @@
       <ul class="menu p-4 w-72 gap-1 bg-neutral text-base-content">
         <div class="flex justify-between items-start py-2">
           <RouterLink class="w-[100px]" :to="{ name: 'home' }">
-            <img class="object-fit h-auto" src="https://astroLT.b-cdn.net/lt_logo.png " />
+            <img class="object-fit h-auto" :src="logoURL" />
           </RouterLink>
           <label for="my-drawer" class="btn btn-ghost drawer-button md:hidden text-white px-3">
             <svg
@@ -32,7 +32,7 @@
           </li>
         </div>
         <li>
-          <a href="https://discord.gg/xN58dnpPJx">
+          <a :href="discordURL">
             Forums
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -54,8 +54,8 @@
         </li>
         <br />
         <div class="flex-grow"></div>
-        <a href="https://www.astrogame.co">
-          <img class="h-16 w-auto rounded-lg" src="https://astroLT.b-cdn.net/ag-logo.png" />
+        <a :href="astrogameURL">
+          <img class="h-16 w-auto rounded-lg" :src="astrogameLogo" />
         </a>
         <div class="mt-4">
           <SocialsMenuSecondary />
@@ -70,6 +70,7 @@ import NavBarVue from "./NavBar.vue"
 import svgMenuVue from "./svgMenu.vue"
 import FooterVue from "./Footer.vue"
 import SocialsMenuSecondary from "./SocialsMenuSecondary.vue"
+import contents_url from '../../static/assets/contents_url.json'
 
 export default {
   props: ["pages"],
@@ -79,5 +80,17 @@ export default {
     FooterVue,
     SocialsMenuSecondary,
   },
+  data() {
+    return { 
+      discordURL: contents_url.discordURL,
+      logoURL: contents_url.logoURL,
+      astrogameURL: contents_url.astrogameURL,
+      astrogameLogo: contents_url.astrogameLogo
+    }
+}
 }
 </script>
+
+
+
+
