@@ -22,7 +22,7 @@
     </div> -->
 
     <article class="row-start-1 col-start-2 prose">
-      <h1>Discover the Thrilling World of Latale: A Comprehensive MMORPG</h1>
+      <h1>Discover Latale</h1>
 
       <p>
         Latale is a massively multiplayer online role-playing game (MMORPG) that offers players a unique and exciting
@@ -30,7 +30,7 @@
         offers endless opportunities for players to explore, battle, and interact with each other.
       </p>
 
-      <h2>Gameplay Features</h2>
+      
 
       <h3>Battling Monsters</h3>
       <p>
@@ -38,6 +38,7 @@
         Battling these monsters is a key part of Latale's gameplay, as it allows players to gain experience, loot, and
         grow their characters. Whether you prefer to solo or team up with other players, Latale's monster battles offer
         a thrilling and challenging experience.
+  
       </p>
 
       <h3>Exploration</h3>
@@ -70,7 +71,6 @@
         experience.
       </p>
 
-      <h2>Conclusion</h2>
       <p>
         Latale is a rich and complex MMORPG that offers endless opportunities for players to explore, battle, and
         interact with each other. Whether you're a seasoned MMORPG veteran or a newcomer to the genre, Latale has

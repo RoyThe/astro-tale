@@ -19,13 +19,17 @@
   </div>
 </template>
 
+
 <script>
-const newsUrls = ["https://placeimg.com/400/225/arch"]
-const bgUrl = "https://astroLT.b-cdn.net/bg_1.jpg "
+import contents_url from '../../static/assets/contents_url.json'
 
 export default {
   data() {
-    return { newsUrls, bgUrl }
+    return { 
+      newsUrls: contents_url.newsUrls, 
+      bgUrl: contents_url.bgUrl 
+    }
   },
 }
 </script>
+

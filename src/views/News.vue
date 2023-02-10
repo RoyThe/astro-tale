@@ -42,17 +42,21 @@
 </template>
 
 <script>
+import contents_url from '../../static/assets/contents_url.json'
 import NewsCard from "../components/NewsCard.vue"
 import { getNews } from "../services/getCardContent"
 
-const bgSliderUrl = "https://astroLT.b-cdn.net/lt-slider-misc.jpg"
-const bgUnderLineUrl = "https://astroLT.b-cdn.net/lt_arrow.png"
 const cardLimit = 3
 const news = getNews()
 
 export default {
   data() {
-    return { bgSliderUrl, bgUnderLineUrl, cardLimit, news }
+    return { 
+      bgSliderUrl: contents_url.bgSliderUrl,
+      bgUnderLineUrl: contents_url.bgUnderLineUrl, 
+      cardLimit, 
+      news 
+    }
   },
   components: { NewsCard },
 }
